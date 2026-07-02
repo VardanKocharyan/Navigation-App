@@ -19,6 +19,7 @@ struct RoadSegment {
     uint64_t sourceId{0};
     uint64_t destId{0};
     double distance{0.0};
+    bool isOneWay{false};
 
     RoadType type{RoadType::Residential};
     RoadStatus status{RoadStatus::Open};
