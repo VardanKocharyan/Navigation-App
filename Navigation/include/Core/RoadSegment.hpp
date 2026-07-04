@@ -26,6 +26,11 @@ struct RoadSegment {
 
     double speedLimit{60.0};
     double trafficFactor{1.0};
+
+    std::string roadName;
+    uint64_t osmWayId{0};
+
+    bool operator==(const RoadSegment&) const = default;
 };
 
 }
