@@ -90,10 +90,24 @@ CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/build/ui_app_autogen/mocs_compilation.cpp -o CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.s
 
+CMakeFiles/ui_app.dir/ui/main.cpp.o: CMakeFiles/ui_app.dir/flags.make
+CMakeFiles/ui_app.dir/ui/main.cpp.o: /home/vardan/DesktopNavigationSystem/ui/main.cpp
+CMakeFiles/ui_app.dir/ui/main.cpp.o: CMakeFiles/ui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ui_app.dir/ui/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ui_app.dir/ui/main.cpp.o -MF CMakeFiles/ui_app.dir/ui/main.cpp.o.d -o CMakeFiles/ui_app.dir/ui/main.cpp.o -c /home/vardan/DesktopNavigationSystem/ui/main.cpp
+
+CMakeFiles/ui_app.dir/ui/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ui_app.dir/ui/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vardan/DesktopNavigationSystem/ui/main.cpp > CMakeFiles/ui_app.dir/ui/main.cpp.i
+
+CMakeFiles/ui_app.dir/ui/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ui_app.dir/ui/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/ui/main.cpp -o CMakeFiles/ui_app.dir/ui/main.cpp.s
+
 CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: CMakeFiles/ui_app.dir/flags.make
 CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: /home/vardan/DesktopNavigationSystem/ui/mainwindow/MainWindow.cpp
 CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o -MF CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o.d -o CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o -c /home/vardan/DesktopNavigationSystem/ui/mainwindow/MainWindow.cpp
 
 CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.i: cmake_force
@@ -107,7 +121,7 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.s: cmake_force
 CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o: CMakeFiles/ui_app.dir/flags.make
 CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o: /home/vardan/DesktopNavigationSystem/ui/controllers/SceneController.cpp
 CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o -MF CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o.d -o CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o -c /home/vardan/DesktopNavigationSystem/ui/controllers/SceneController.cpp
 
 CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.i: cmake_force
@@ -121,7 +135,7 @@ CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.s: cmake_force
 CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o: CMakeFiles/ui_app.dir/flags.make
 CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o: /home/vardan/DesktopNavigationSystem/ui/rendering/MapRenderer.cpp
 CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o -MF CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o.d -o CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o -c /home/vardan/DesktopNavigationSystem/ui/rendering/MapRenderer.cpp
 
 CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.i: cmake_force
@@ -135,6 +149,7 @@ CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.s: cmake_force
 # Object files for target ui_app
 ui_app_OBJECTS = \
 "CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.o" \
+"CMakeFiles/ui_app.dir/ui/main.cpp.o" \
 "CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o" \
 "CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o" \
 "CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o"
@@ -143,6 +158,7 @@ ui_app_OBJECTS = \
 ui_app_EXTERNAL_OBJECTS =
 
 ui_app: CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.o
+ui_app: CMakeFiles/ui_app.dir/ui/main.cpp.o
 ui_app: CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o
 ui_app: CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o
 ui_app: CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o
@@ -157,7 +173,7 @@ ui_app: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 ui_app: /usr/lib/x86_64-linux-gnu/libGLX.so
 ui_app: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ui_app: CMakeFiles/ui_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ui_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ui_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ui_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

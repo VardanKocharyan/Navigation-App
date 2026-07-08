@@ -1,9 +1,16 @@
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/core.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/algorithms.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/persistence.dir
+/home/vardan/DesktopNavigationSystem/build/CMakeFiles/application.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/ui_app.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/test.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/edit_cache.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/rebuild_cache.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/ui_app_autogen_timestamp_deps.dir
 /home/vardan/DesktopNavigationSystem/build/CMakeFiles/ui_app_autogen.dir
+/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/application_tests.dir
+/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/test.dir
+/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/edit_cache.dir
+/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/rebuild_cache.dir
+/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir
+/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/application_tests_autogen.dir

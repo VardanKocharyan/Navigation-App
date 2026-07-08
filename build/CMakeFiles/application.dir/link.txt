@@ -1,0 +1,2 @@
+/usr/bin/ar qc libapplication.a CMakeFiles/application.dir/application/src/ApplicationTypes.cpp.o CMakeFiles/application.dir/application/src/NavigationService.cpp.o CMakeFiles/application.dir/application/src/GraphLoader.cpp.o CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.o
+/usr/bin/ranlib libapplication.a

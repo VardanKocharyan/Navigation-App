@@ -166,6 +166,19 @@ persistence/fast:
 .PHONY : persistence/fast
 
 #=============================================================================
+# Target rules for targets named application
+
+# Build rule for target.
+application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application
+.PHONY : application
+
+# fast build rule for target.
+application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/build
+.PHONY : application/fast
+
+#=============================================================================
 # Target rules for targets named ui_app
 
 # Build rule for target.
@@ -203,6 +216,45 @@ ui_app_autogen: cmake_check_build_system
 ui_app_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app_autogen.dir/build.make CMakeFiles/ui_app_autogen.dir/build
 .PHONY : ui_app_autogen/fast
+
+#=============================================================================
+# Target rules for targets named application_tests
+
+# Build rule for target.
+application_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application_tests
+.PHONY : application_tests
+
+# fast build rule for target.
+application_tests/fast:
+	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/build
+.PHONY : application_tests/fast
+
+#=============================================================================
+# Target rules for targets named application_tests_autogen_timestamp_deps
+
+# Build rule for target.
+application_tests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application_tests_autogen_timestamp_deps
+.PHONY : application_tests_autogen_timestamp_deps
+
+# fast build rule for target.
+application_tests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/build.make application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/build
+.PHONY : application_tests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named application_tests_autogen
+
+# Build rule for target.
+application_tests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application_tests_autogen
+.PHONY : application_tests_autogen
+
+# fast build rule for target.
+application_tests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests_autogen.dir/build.make application/tests/CMakeFiles/application_tests_autogen.dir/build
+.PHONY : application_tests_autogen/fast
 
 Algorithms/AStar/AStarPathFinder.o: Algorithms/AStar/AStarPathFinder.cpp.o
 .PHONY : Algorithms/AStar/AStarPathFinder.o
@@ -275,6 +327,102 @@ Algorithms/Factory/PathFinderFactory.s: Algorithms/Factory/PathFinderFactory.cpp
 Algorithms/Factory/PathFinderFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/algorithms.dir/build.make CMakeFiles/algorithms.dir/Algorithms/Factory/PathFinderFactory.cpp.s
 .PHONY : Algorithms/Factory/PathFinderFactory.cpp.s
+
+application/src/ApplicationTypes.o: application/src/ApplicationTypes.cpp.o
+.PHONY : application/src/ApplicationTypes.o
+
+# target to build an object file
+application/src/ApplicationTypes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/ApplicationTypes.cpp.o
+.PHONY : application/src/ApplicationTypes.cpp.o
+
+application/src/ApplicationTypes.i: application/src/ApplicationTypes.cpp.i
+.PHONY : application/src/ApplicationTypes.i
+
+# target to preprocess a source file
+application/src/ApplicationTypes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/ApplicationTypes.cpp.i
+.PHONY : application/src/ApplicationTypes.cpp.i
+
+application/src/ApplicationTypes.s: application/src/ApplicationTypes.cpp.s
+.PHONY : application/src/ApplicationTypes.s
+
+# target to generate assembly for a file
+application/src/ApplicationTypes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/ApplicationTypes.cpp.s
+.PHONY : application/src/ApplicationTypes.cpp.s
+
+application/src/GraphLoader.o: application/src/GraphLoader.cpp.o
+.PHONY : application/src/GraphLoader.o
+
+# target to build an object file
+application/src/GraphLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/GraphLoader.cpp.o
+.PHONY : application/src/GraphLoader.cpp.o
+
+application/src/GraphLoader.i: application/src/GraphLoader.cpp.i
+.PHONY : application/src/GraphLoader.i
+
+# target to preprocess a source file
+application/src/GraphLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/GraphLoader.cpp.i
+.PHONY : application/src/GraphLoader.cpp.i
+
+application/src/GraphLoader.s: application/src/GraphLoader.cpp.s
+.PHONY : application/src/GraphLoader.s
+
+# target to generate assembly for a file
+application/src/GraphLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/GraphLoader.cpp.s
+.PHONY : application/src/GraphLoader.cpp.s
+
+application/src/NavigationService.o: application/src/NavigationService.cpp.o
+.PHONY : application/src/NavigationService.o
+
+# target to build an object file
+application/src/NavigationService.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/NavigationService.cpp.o
+.PHONY : application/src/NavigationService.cpp.o
+
+application/src/NavigationService.i: application/src/NavigationService.cpp.i
+.PHONY : application/src/NavigationService.i
+
+# target to preprocess a source file
+application/src/NavigationService.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/NavigationService.cpp.i
+.PHONY : application/src/NavigationService.cpp.i
+
+application/src/NavigationService.s: application/src/NavigationService.cpp.s
+.PHONY : application/src/NavigationService.s
+
+# target to generate assembly for a file
+application/src/NavigationService.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/NavigationService.cpp.s
+.PHONY : application/src/NavigationService.cpp.s
+
+application/src/RoutePresentationBuilder.o: application/src/RoutePresentationBuilder.cpp.o
+.PHONY : application/src/RoutePresentationBuilder.o
+
+# target to build an object file
+application/src/RoutePresentationBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.o
+.PHONY : application/src/RoutePresentationBuilder.cpp.o
+
+application/src/RoutePresentationBuilder.i: application/src/RoutePresentationBuilder.cpp.i
+.PHONY : application/src/RoutePresentationBuilder.i
+
+# target to preprocess a source file
+application/src/RoutePresentationBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.i
+.PHONY : application/src/RoutePresentationBuilder.cpp.i
+
+application/src/RoutePresentationBuilder.s: application/src/RoutePresentationBuilder.cpp.s
+.PHONY : application/src/RoutePresentationBuilder.s
+
+# target to generate assembly for a file
+application/src/RoutePresentationBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.s
+.PHONY : application/src/RoutePresentationBuilder.cpp.s
 
 core/src/Edge.o: core/src/Edge.cpp.o
 .PHONY : core/src/Edge.o
@@ -516,6 +664,30 @@ ui/controllers/SceneController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app.dir/build.make CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.s
 .PHONY : ui/controllers/SceneController.cpp.s
 
+ui/main.o: ui/main.cpp.o
+.PHONY : ui/main.o
+
+# target to build an object file
+ui/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app.dir/build.make CMakeFiles/ui_app.dir/ui/main.cpp.o
+.PHONY : ui/main.cpp.o
+
+ui/main.i: ui/main.cpp.i
+.PHONY : ui/main.i
+
+# target to preprocess a source file
+ui/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app.dir/build.make CMakeFiles/ui_app.dir/ui/main.cpp.i
+.PHONY : ui/main.cpp.i
+
+ui/main.s: ui/main.cpp.s
+.PHONY : ui/main.s
+
+# target to generate assembly for a file
+ui/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app.dir/build.make CMakeFiles/ui_app.dir/ui/main.cpp.s
+.PHONY : ui/main.cpp.s
+
 ui/mainwindow/MainWindow.o: ui/mainwindow/MainWindow.cpp.o
 .PHONY : ui/mainwindow/MainWindow.o
 
@@ -597,9 +769,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... application_tests_autogen"
+	@echo "... application_tests_autogen_timestamp_deps"
 	@echo "... ui_app_autogen"
 	@echo "... ui_app_autogen_timestamp_deps"
 	@echo "... algorithms"
+	@echo "... application"
+	@echo "... application_tests"
 	@echo "... core"
 	@echo "... persistence"
 	@echo "... ui_app"
@@ -612,6 +788,18 @@ help:
 	@echo "... Algorithms/Factory/PathFinderFactory.o"
 	@echo "... Algorithms/Factory/PathFinderFactory.i"
 	@echo "... Algorithms/Factory/PathFinderFactory.s"
+	@echo "... application/src/ApplicationTypes.o"
+	@echo "... application/src/ApplicationTypes.i"
+	@echo "... application/src/ApplicationTypes.s"
+	@echo "... application/src/GraphLoader.o"
+	@echo "... application/src/GraphLoader.i"
+	@echo "... application/src/GraphLoader.s"
+	@echo "... application/src/NavigationService.o"
+	@echo "... application/src/NavigationService.i"
+	@echo "... application/src/NavigationService.s"
+	@echo "... application/src/RoutePresentationBuilder.o"
+	@echo "... application/src/RoutePresentationBuilder.i"
+	@echo "... application/src/RoutePresentationBuilder.s"
 	@echo "... core/src/Edge.o"
 	@echo "... core/src/Edge.i"
 	@echo "... core/src/Edge.s"
@@ -642,6 +830,9 @@ help:
 	@echo "... ui/controllers/SceneController.o"
 	@echo "... ui/controllers/SceneController.i"
 	@echo "... ui/controllers/SceneController.s"
+	@echo "... ui/main.o"
+	@echo "... ui/main.i"
+	@echo "... ui/main.s"
 	@echo "... ui/mainwindow/MainWindow.o"
 	@echo "... ui/mainwindow/MainWindow.i"
 	@echo "... ui/mainwindow/MainWindow.s"

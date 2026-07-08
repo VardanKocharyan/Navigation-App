@@ -1,0 +1,5 @@
+if(EXISTS "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests[1]_tests.cmake")
+  include("/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests[1]_tests.cmake")
+else()
+  add_test(application_tests_NOT_BUILT application_tests_NOT_BUILT)
+endif()

@@ -2,20 +2,33 @@
 
 namespace core::graph {
 
-bool Graph::addNode(const model::Node&) {
+bool Graph::addNode(const model::Node& node)
+{
+    const auto id = node.id();
+
+    auto [it, inserted] = nodes_.emplace(id, node);
+
+    if (!inserted) {
+        return false; // Duplicate NodeId
+    }
+
+    // Ensure an adjacency entry exists for this node.
+    adjacency_.try_emplace(id);
+
     return true;
 }
 
-bool Graph::addEdge(const model::Edge&) {
-    return true;
+const model::Node* Graph::findNode(types::NodeId id) const
+{
+    auto it = nodes_.find(id);
+
+    if (it == nodes_.end()) {
+        return nullptr;
+    }
+
+    return &it->second;
 }
 
-bool Graph::removeNode(types::NodeId) {
-    return true;
-}
 
-bool Graph::removeEdge(types::EdgeId) {
-    return true;
-}
 
 } // namespace core::graph

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "ui_app_autogen"
   "CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o"
   "CMakeFiles/ui_app.dir/ui/controllers/SceneController.cpp.o.d"
+  "CMakeFiles/ui_app.dir/ui/main.cpp.o"
+  "CMakeFiles/ui_app.dir/ui/main.cpp.o.d"
   "CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o"
   "CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o.d"
   "CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o"

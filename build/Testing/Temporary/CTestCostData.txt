@@ -1,0 +1,6 @@
+NavigationServiceTest.ValidRouteReturnsSuccessfulResult 2 0.00265155
+NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder 2 0.00250054
+NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder 2 0.00281034
+NavigationServiceTest.EmptyRouteReturnsUnavailable 2 0.00237244
+RoutePresentationBuilderTest.BuildsGeometryFromRoute 2 0.00308463
+---

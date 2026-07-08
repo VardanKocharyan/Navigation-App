@@ -1,0 +1,104 @@
+{
+	"BUILD_DIR" : "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests_autogen",
+	"CMAKE_BINARY_DIR" : "/home/vardan/DesktopNavigationSystem/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/vardan/DesktopNavigationSystem/build/application/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/vardan/DesktopNavigationSystem/application/tests",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/vardan/DesktopNavigationSystem/application/tests/CMakeLists.txt",
+		"/usr/share/cmake-3.28/Modules/FindGTest.cmake",
+		"/usr/share/cmake-3.28/Modules/GoogleTest.cmake",
+		"/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake",
+		"/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/share/cmake-3.28/Modules/FindThreads.cmake",
+		"/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake",
+		"/usr/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake",
+		"/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake",
+		"/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-none.cmake",
+		"/usr/share/cmake-3.28/Modules/GoogleTest.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/vardan/DesktopNavigationSystem",
+	"DEP_FILE" : "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "application_tests_autogen/timestamp",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/vardan/DesktopNavigationSystem/application/include",
+		"/home/vardan/DesktopNavigationSystem/core/include",
+		"/home/vardan/DesktopNavigationSystem/Algorithms",
+		"/home/vardan/DesktopNavigationSystem/persistence/include",
+		"/usr/include",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++20",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/application_tests_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 4,
+	"SETTINGS_FILE" : "/home/vardan/DesktopNavigationSystem/build/application/tests/CMakeFiles/application_tests_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/vardan/DesktopNavigationSystem/application/tests/test_navigation_service.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_builder.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
