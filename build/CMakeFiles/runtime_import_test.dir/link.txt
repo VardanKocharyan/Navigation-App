@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/runtime_import_test.dir/runtime_import_test_autogen/mocs_compilation.cpp.o CMakeFiles/runtime_import_test.dir/runtime_import_test.cpp.o -o runtime_import_test  libpersistence.a libcore.a 

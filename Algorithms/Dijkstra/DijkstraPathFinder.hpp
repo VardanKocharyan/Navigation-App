@@ -2,6 +2,10 @@
 
 #include "../Interfaces/IPathFinder.hpp"
 
+
+namespace algorithms
+{
+
 class DijkstraPathFinder final : public IPathFinder
 {
 public:
@@ -12,3 +16,5 @@ public:
         core::types::NodeId destination
     ) const override;
 };
+
+}

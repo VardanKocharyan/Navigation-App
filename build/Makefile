@@ -192,6 +192,19 @@ ui_app/fast:
 .PHONY : ui_app/fast
 
 #=============================================================================
+# Target rules for targets named runtime_import_test
+
+# Build rule for target.
+runtime_import_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runtime_import_test
+.PHONY : runtime_import_test
+
+# fast build rule for target.
+runtime_import_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/build
+.PHONY : runtime_import_test/fast
+
+#=============================================================================
 # Target rules for targets named ui_app_autogen_timestamp_deps
 
 # Build rule for target.
@@ -216,6 +229,32 @@ ui_app_autogen: cmake_check_build_system
 ui_app_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app_autogen.dir/build.make CMakeFiles/ui_app_autogen.dir/build
 .PHONY : ui_app_autogen/fast
+
+#=============================================================================
+# Target rules for targets named runtime_import_test_autogen_timestamp_deps
+
+# Build rule for target.
+runtime_import_test_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runtime_import_test_autogen_timestamp_deps
+.PHONY : runtime_import_test_autogen_timestamp_deps
+
+# fast build rule for target.
+runtime_import_test_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test_autogen_timestamp_deps.dir/build.make CMakeFiles/runtime_import_test_autogen_timestamp_deps.dir/build
+.PHONY : runtime_import_test_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named runtime_import_test_autogen
+
+# Build rule for target.
+runtime_import_test_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runtime_import_test_autogen
+.PHONY : runtime_import_test_autogen
+
+# fast build rule for target.
+runtime_import_test_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test_autogen.dir/build.make CMakeFiles/runtime_import_test_autogen.dir/build
+.PHONY : runtime_import_test_autogen/fast
 
 #=============================================================================
 # Target rules for targets named application_tests
@@ -688,6 +727,54 @@ persistence/src/RoadFeatureExtractor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/persistence.dir/build.make CMakeFiles/persistence.dir/persistence/src/RoadFeatureExtractor.cpp.s
 .PHONY : persistence/src/RoadFeatureExtractor.cpp.s
 
+runtime_import_test.o: runtime_import_test.cpp.o
+.PHONY : runtime_import_test.o
+
+# target to build an object file
+runtime_import_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/runtime_import_test.cpp.o
+.PHONY : runtime_import_test.cpp.o
+
+runtime_import_test.i: runtime_import_test.cpp.i
+.PHONY : runtime_import_test.i
+
+# target to preprocess a source file
+runtime_import_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/runtime_import_test.cpp.i
+.PHONY : runtime_import_test.cpp.i
+
+runtime_import_test.s: runtime_import_test.cpp.s
+.PHONY : runtime_import_test.s
+
+# target to generate assembly for a file
+runtime_import_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/runtime_import_test.cpp.s
+.PHONY : runtime_import_test.cpp.s
+
+runtime_import_test_autogen/mocs_compilation.o: runtime_import_test_autogen/mocs_compilation.cpp.o
+.PHONY : runtime_import_test_autogen/mocs_compilation.o
+
+# target to build an object file
+runtime_import_test_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/runtime_import_test_autogen/mocs_compilation.cpp.o
+.PHONY : runtime_import_test_autogen/mocs_compilation.cpp.o
+
+runtime_import_test_autogen/mocs_compilation.i: runtime_import_test_autogen/mocs_compilation.cpp.i
+.PHONY : runtime_import_test_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+runtime_import_test_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/runtime_import_test_autogen/mocs_compilation.cpp.i
+.PHONY : runtime_import_test_autogen/mocs_compilation.cpp.i
+
+runtime_import_test_autogen/mocs_compilation.s: runtime_import_test_autogen/mocs_compilation.cpp.s
+.PHONY : runtime_import_test_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+runtime_import_test_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/runtime_import_test_autogen/mocs_compilation.cpp.s
+.PHONY : runtime_import_test_autogen/mocs_compilation.cpp.s
+
 ui/controllers/NavigationController.o: ui/controllers/NavigationController.cpp.o
 .PHONY : ui/controllers/NavigationController.o
 
@@ -843,6 +930,8 @@ help:
 	@echo "... test"
 	@echo "... application_tests_autogen"
 	@echo "... application_tests_autogen_timestamp_deps"
+	@echo "... runtime_import_test_autogen"
+	@echo "... runtime_import_test_autogen_timestamp_deps"
 	@echo "... ui_app_autogen"
 	@echo "... ui_app_autogen_timestamp_deps"
 	@echo "... algorithms"
@@ -850,6 +939,7 @@ help:
 	@echo "... application_tests"
 	@echo "... core"
 	@echo "... persistence"
+	@echo "... runtime_import_test"
 	@echo "... ui_app"
 	@echo "... Algorithms/AStar/AStarPathFinder.o"
 	@echo "... Algorithms/AStar/AStarPathFinder.i"
@@ -905,6 +995,12 @@ help:
 	@echo "... persistence/src/RoadFeatureExtractor.o"
 	@echo "... persistence/src/RoadFeatureExtractor.i"
 	@echo "... persistence/src/RoadFeatureExtractor.s"
+	@echo "... runtime_import_test.o"
+	@echo "... runtime_import_test.i"
+	@echo "... runtime_import_test.s"
+	@echo "... runtime_import_test_autogen/mocs_compilation.o"
+	@echo "... runtime_import_test_autogen/mocs_compilation.i"
+	@echo "... runtime_import_test_autogen/mocs_compilation.s"
 	@echo "... ui/controllers/NavigationController.o"
 	@echo "... ui/controllers/NavigationController.i"
 	@echo "... ui/controllers/NavigationController.s"

@@ -19,7 +19,7 @@ public:
 
     NavigationService(
         const core::graph::Graph& graph,
-        std::unique_ptr<IPathFinder> pathFinder,
+        std::unique_ptr<algorithms::IPathFinder> pathFinder,
         const INodeGeometryProvider& geometryProvider
     );
 
@@ -32,7 +32,7 @@ private:
 
     const core::graph::Graph& graph_;
 
-    std::unique_ptr<IPathFinder> pathFinder_;
+    std::unique_ptr<algorithms::IPathFinder> pathFinder_;
 
     const INodeGeometryProvider& geometryProvider_;
 };

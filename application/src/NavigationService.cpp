@@ -1,3 +1,4 @@
+#include <iostream>
 #include "application/NavigationService.hpp"
 #include "application/RoutePresentationBuilder.hpp"
 
@@ -8,7 +9,7 @@ namespace application
 
 NavigationService::NavigationService(
     const core::graph::Graph& graph,
-    std::unique_ptr<IPathFinder> pathFinder,
+    std::unique_ptr<algorithms::IPathFinder> pathFinder,
     const INodeGeometryProvider& geometryProvider
 )
     :
@@ -52,6 +53,10 @@ NavigationResponse NavigationService::calculateRoute(
             destination
         );
 
+    std::cout
+    << "Route nodes: "
+    << route.path().size()
+    << std::endl;
 
     if(route.path().empty())
     {
@@ -65,6 +70,15 @@ NavigationResponse NavigationService::calculateRoute(
     RoutePresentationBuilder builder(
         geometryProvider_
     );
+
+
+    auto presentation =
+    builder.build(route);
+
+    std::cout
+    << "Geometry points: "
+    << presentation.geometryPoints.size()
+    << std::endl;
 
 
     result.success = true;

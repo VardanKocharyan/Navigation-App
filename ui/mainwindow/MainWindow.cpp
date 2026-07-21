@@ -7,17 +7,26 @@
 #include <application/NavigationService.hpp>
 #include <application/RoutePresentationData.hpp>
 
+#include <core/graph/Graph.hpp>
+
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QStatusBar>
-
+#include <QTimer>
 
 MainWindow::MainWindow(
     application::NavigationService& navigationService,
+    const core::graph::Graph& graph,
+    const std::unordered_map<
+        core::types::NodeId,
+        persistence::Coordinate
+    >& nodeCoordinates,
     QWidget* parent
 )
     :
     QMainWindow(parent),
+    graph_(graph),
+    nodeCoordinates_(nodeCoordinates),
     scene(nullptr),
     graphicsView(nullptr),
     sceneController(nullptr),
@@ -25,21 +34,38 @@ MainWindow::MainWindow(
     mapRenderer(nullptr)
 {
     scene =
-        new QGraphicsScene(this);
+        new QGraphicsScene(
+            this
+        );
 
 
     graphicsView =
-        new QGraphicsView(this);
+        new QGraphicsView(
+            this
+        );
 
-    graphicsView->setScene(scene);
+
+    graphicsView->setScene(
+        scene
+    );
 
 
     sceneController =
-        new SceneController(scene);
+        new SceneController(
+            scene
+        );
 
 
     mapRenderer =
-        new MapRenderer(scene);
+        new MapRenderer(
+            scene
+        );
+
+
+    mapRenderer->renderGraph(
+        graph_,
+        nodeCoordinates_
+    );
 
 
     navigationController =
@@ -57,7 +83,9 @@ MainWindow::MainWindow(
             const application::RoutePresentationData& route
         )
         {
-            mapRenderer->renderRoute(route);
+            mapRenderer->renderRoute(
+                route
+            );
         }
     );
 
@@ -76,7 +104,8 @@ MainWindow::MainWindow(
 }
 
 
-void MainWindow::onNavigationFailed(
+void
+MainWindow::onNavigationFailed(
     const QString& message
 )
 {
@@ -85,9 +114,13 @@ void MainWindow::onNavigationFailed(
     );
 }
 
-void MainWindow::onRouteReady(
+
+void
+MainWindow::onRouteReady(
     const application::RoutePresentationData& route
 )
 {
-    mapRenderer->renderRoute(route);
+    mapRenderer->renderRoute(
+        route
+    );
 }

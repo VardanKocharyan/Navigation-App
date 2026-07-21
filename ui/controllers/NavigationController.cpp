@@ -2,6 +2,7 @@
 
 #include <application/NavigationService.hpp>
 
+#include <QDebug>
 
 NavigationController::NavigationController(
     application::NavigationService& service,
@@ -19,6 +20,9 @@ void NavigationController::requestRoute(
     core::types::NodeId destination
 )
 {
+
+    qDebug() << "NavigationController::requestRoute called";
+
     auto response =
         navigationService.calculateRoute(
             start,
@@ -33,6 +37,10 @@ void NavigationController::requestRoute(
             emit routeReady(
                 *response.route
             );
+
+            qDebug()
+            << "UI received geometry points:"
+            << response.route->geometryPoints.size();
         }
     }
     else

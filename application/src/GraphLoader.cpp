@@ -1,28 +1,65 @@
 #include "application/GraphLoader.hpp"
 
+#include "ImportedGraph.hpp"
+
 #include <stdexcept>
+#include <utility>
 
 
 namespace application
 {
 
-GraphLoader::GraphLoader(std::unique_ptr<IGraphImporter> importer)
-    : importer_(std::move(importer))
+GraphLoader::GraphLoader(
+    std::unique_ptr<IGraphImporter> importer
+)
+    :
+    importer_(
+        std::move(importer)
+    )
 {
     if (!importer_)
     {
-        throw std::invalid_argument("GraphLoader requires valid IGraphImporter");
+        throw std::invalid_argument(
+            "GraphLoader requires valid IGraphImporter"
+        );
     }
 }
 
 
-void GraphLoader::load(const std::filesystem::path& source)
+void
+GraphLoader::load(
+    const std::filesystem::path& source
+)
 {
-    auto loadedGraph = importer_->import(source);
+    auto importedGraph =
+        importer_->import(
+            source
+        );
 
 
-    graph_ = std::make_unique<core::graph::Graph>(std::move(loadedGraph));
+    graph_ =
+        std::make_unique<
+            core::graph::Graph
+        >(
+            std::move(
+                importedGraph.graph
+            )
+        );
+
+
+    nodeCoordinates_ =
+        std::make_unique<
+            std::unordered_map<
+                core::types::NodeId,
+                persistence::Coordinate
+            >
+        >(
+            std::move(
+                importedGraph.nodeCoordinates
+            )
+        );
 }
+
 
 const core::graph::Graph&
 GraphLoader::graph() const
@@ -34,13 +71,34 @@ GraphLoader::graph() const
         );
     }
 
+
     return *graph_;
 }
 
 
-bool GraphLoader::isLoaded() const noexcept
+const std::unordered_map<
+    core::types::NodeId,
+    persistence::Coordinate
+>&
+GraphLoader::nodeCoordinates() const
 {
-    return graph_ != nullptr;
+    if (!nodeCoordinates_)
+    {
+        throw std::runtime_error(
+            "Graph has not been loaded"
+        );
+    }
+
+
+    return *nodeCoordinates_;
+}
+
+
+bool
+GraphLoader::isLoaded() const noexcept
+{
+    return
+        graph_ != nullptr;
 }
 
 }

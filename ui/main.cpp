@@ -1,6 +1,7 @@
 #include <QApplication>
 
 #include <application/ApplicationBootstrap.hpp>
+#include <application/NavigationService.hpp>
 
 #include "mainwindow/MainWindow.h"
 
@@ -10,14 +11,19 @@ int main(
     char* argv[]
 )
 {
-    QApplication app(argc, argv);
+    QApplication app(
+        argc,
+        argv
+    );
 
 
     application::ApplicationBootstrap bootstrap;
 
 
     MainWindow window(
-        bootstrap.navigationService()
+        bootstrap.navigationService(),
+        bootstrap.graph(),
+        bootstrap.nodeCoordinates()
     );
 
 

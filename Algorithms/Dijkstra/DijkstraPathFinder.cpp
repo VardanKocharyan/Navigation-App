@@ -11,6 +11,9 @@
 #include <core/model/Route.hpp>
 
 
+namespace algorithms
+{
+
 namespace
 {
 
@@ -23,6 +26,7 @@ struct NodeState
     NodeId node;
     Cost cost;
 
+
     NodeState(
         NodeId id,
         Cost distance
@@ -32,6 +36,7 @@ struct NodeState
         cost(distance)
     {
     }
+
 
     bool operator>(const NodeState& other) const
     {
@@ -64,15 +69,18 @@ DijkstraPathFinder::findPath(
         std::greater<NodeState>
     > queue;
 
+
     std::unordered_map<NodeId, Cost> distance;
 
     std::unordered_map<NodeId, NodeId> parent;
 
     std::unordered_set<NodeId> visited;
 
+
     distance[source] = 0;
 
     queue.emplace(source, 0);
+
 
     while (!queue.empty())
     {
@@ -80,13 +88,21 @@ DijkstraPathFinder::findPath(
 
         queue.pop();
 
-        if (visited.contains(current.node)) continue;
+
+        if (visited.contains(current.node))
+            continue;
+
 
         visited.insert(current.node);
 
-        if (current.node == destination) break;
 
-        const auto outgoingEdges = graph.getOutgoingEdges(current.node);
+        if (current.node == destination)
+            break;
+
+
+        const auto outgoingEdges =
+            graph.getOutgoingEdges(current.node);
+
 
         for (const auto& edge : outgoingEdges)
         {
@@ -94,11 +110,17 @@ DijkstraPathFinder::findPath(
 
             Cost weight = edge.weight();
 
-            Cost newDistance = distance[current.node] + weight;
 
-            auto existing = distance.find(next);
+            Cost newDistance =
+                distance[current.node] + weight;
 
-            if (existing == distance.end() || newDistance < existing->second)
+
+            auto existing =
+                distance.find(next);
+
+
+            if (existing == distance.end() ||
+                newDistance < existing->second)
             {
                 distance[next] = newDistance;
 
@@ -109,22 +131,30 @@ DijkstraPathFinder::findPath(
         }
     }
 
+
     if (!distance.contains(destination))
     {
         return core::model::Route{};
     }
 
+
     core::model::Route::Path path;
 
+
     NodeId current = destination;
+
 
     while (true)
     {
         path.push_back(current);
 
-        if (current == source) break;
 
-        auto parentIt = parent.find(current);
+        if (current == source)
+            break;
+
+
+        auto parentIt =
+            parent.find(current);
 
 
         if (parentIt == parent.end())
@@ -132,11 +162,20 @@ DijkstraPathFinder::findPath(
             return core::model::Route{};
         }
 
+
         current = parentIt->second;
     }
 
-    std::reverse(path.begin(), path.end());
+
+    std::reverse(
+        path.begin(),
+        path.end()
+    );
 
 
-    return core::model::Route(std::move(path));
+    return core::model::Route(
+        std::move(path)
+    );
+}
+
 }

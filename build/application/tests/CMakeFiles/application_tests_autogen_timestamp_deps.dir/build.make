@@ -69,8 +69,8 @@ include application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.di
 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: libapplication.a
 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: libalgorithms.a
 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: libcore.a
-application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libgtest_main.a
 
 application_tests_autogen_timestamp_deps: application/tests/CMakeFiles/application_tests_autogen_timestamp_deps

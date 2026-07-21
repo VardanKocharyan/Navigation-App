@@ -36,6 +36,9 @@ private:
     std::unordered_map<types::NodeId, model::Node> nodes_;
     std::unordered_map<types::EdgeId, model::Edge> edges_;
     std::unordered_map<types::NodeId, std::vector<types::EdgeId>> adjacency_;
+
+    mutable std::vector<model::Node> nodesCache_;
+    mutable std::vector<model::Edge> edgesCache_;
 };
 
 } // namespace core::graph

@@ -1,12 +1,15 @@
 #include "application/ApplicationBootstrap.hpp"
 
+#include "application/GraphLoader.hpp"
 #include "application/NavigationService.hpp"
 #include "application/RuntimeGeometryProvider.hpp"
 
-#include <core/graph/Graph.hpp>
+#include <GeoJSONImporter.hpp>
 
 #include <Factory/PathFinderFactory.hpp>
 #include <Types/AlgorithmType.hpp>
+
+#include <stdexcept>
 
 
 namespace application
@@ -14,23 +17,36 @@ namespace application
 
 ApplicationBootstrap::ApplicationBootstrap()
 {
-    graph =
-        std::make_unique<core::graph::Graph>();
+    auto importer =
+        std::make_unique<GeoJSONImporter>();
+
+
+    graphLoader =
+        std::make_unique<GraphLoader>(
+            std::move(importer)
+        );
+
+
+    graphLoader->load(
+        "persistence/tests/resources/export.geojson"
+    );
 
 
     pathFinder =
-        PathFinderFactory::create(
-            AlgorithmType::Dijkstra
+        algorithms::PathFinderFactory::create(
+            algorithms::AlgorithmType::Dijkstra
         );
 
 
     geometryProvider =
-        std::make_unique<RuntimeGeometryProvider>();
+        std::make_unique<RuntimeGeometryProvider>(
+            graphLoader->nodeCoordinates()
+        );
 
 
     service =
         std::make_unique<NavigationService>(
-            *graph,
+            graphLoader->graph(),
             std::move(pathFinder),
             *geometryProvider
         );
@@ -44,6 +60,23 @@ NavigationService&
 ApplicationBootstrap::navigationService()
 {
     return *service;
+}
+
+
+const core::graph::Graph&
+ApplicationBootstrap::graph() const
+{
+    return graphLoader->graph();
+}
+
+
+const std::unordered_map<
+    core::types::NodeId,
+    persistence::Coordinate
+>&
+ApplicationBootstrap::nodeCoordinates() const
+{
+    return graphLoader->nodeCoordinates();
 }
 
 }

@@ -2,6 +2,8 @@
 
 #include <memory>
 
+#include "Interfaces/IPathFinder.hpp"
+
 #include "application/NavigationService.hpp"
 #include "application/INodeGeometryProvider.hpp"
 
@@ -33,7 +35,7 @@ public:
 
 
 class FakePathFinder final
-    : public IPathFinder
+    : public algorithms::IPathFinder
 {
 
 public:

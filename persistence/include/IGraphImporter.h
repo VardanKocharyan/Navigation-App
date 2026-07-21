@@ -1,12 +1,20 @@
-#pragma once 
+#pragma once
 
-#include "core/graph/Graph.hpp"
+#include <filesystem>
+
+#include "ImportedGraph.hpp"
+
 
 class IGraphImporter
 {
 public:
+
     virtual ~IGraphImporter() = default;
 
+
     [[nodiscard]]
-    virtual core::graph::Graph import(const std::filesystem::path& file) = 0;
+    virtual persistence::ImportedGraph
+    import(
+        const std::filesystem::path& file
+    ) = 0;
 };

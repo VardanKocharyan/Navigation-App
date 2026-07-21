@@ -2,6 +2,10 @@
 
 #include "application/INodeGeometryProvider.hpp"
 
+#include "ImportedGraph.hpp"
+
+#include <unordered_map>
+
 
 namespace application
 {
@@ -9,16 +13,29 @@ namespace application
 class RuntimeGeometryProvider final
     : public INodeGeometryProvider
 {
-
 public:
 
-    RuntimeGeometryProvider() = default;
+    explicit RuntimeGeometryProvider(
+        const std::unordered_map<
+            core::types::NodeId,
+            persistence::Coordinate
+        >& nodeCoordinates
+    );
 
 
-    std::optional<Coordinate> getCoordinate(
+    std::optional<Coordinate>
+    getCoordinate(
         core::types::NodeId nodeId
     ) const override;
 
+
+private:
+
+    const std::unordered_map<
+        core::types::NodeId,
+        persistence::Coordinate
+    >&
+        nodeCoordinates_;
 };
 
 }

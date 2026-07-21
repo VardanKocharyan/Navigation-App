@@ -3,6 +3,7 @@ CMakeFiles/algorithms.dir/Algorithms/Dijkstra/DijkstraPathFinder.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/vardan/DesktopNavigationSystem/Algorithms/Dijkstra/DijkstraPathFinder.hpp \
  /home/vardan/DesktopNavigationSystem/Algorithms/Dijkstra/../Interfaces/IPathFinder.hpp \
+ /home/vardan/DesktopNavigationSystem/core/include/core/graph/Graph.hpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -196,9 +197,8 @@ CMakeFiles/algorithms.dir/Algorithms/Dijkstra/DijkstraPathFinder.cpp.o: \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/Graph.hpp \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \

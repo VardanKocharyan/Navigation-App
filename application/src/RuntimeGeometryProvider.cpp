@@ -4,17 +4,45 @@
 namespace application
 {
 
+RuntimeGeometryProvider::RuntimeGeometryProvider(
+    const std::unordered_map<
+        core::types::NodeId,
+        persistence::Coordinate
+    >& nodeCoordinates
+)
+    :
+    nodeCoordinates_(
+        nodeCoordinates
+    )
+{
+}
+
 
 std::optional<Coordinate>
 RuntimeGeometryProvider::getCoordinate(
     core::types::NodeId nodeId
 ) const
 {
+    const auto iterator =
+        nodeCoordinates_.find(
+            nodeId
+        );
+
+
+    if (
+        iterator
+        ==
+        nodeCoordinates_.end()
+    )
+    {
+        return std::nullopt;
+    }
+
+
     return Coordinate{
-        static_cast<double>(nodeId),
-        static_cast<double>(nodeId)
+        iterator->second.latitude,
+        iterator->second.longitude
     };
 }
-
 
 }

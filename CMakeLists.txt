@@ -103,3 +103,15 @@ target_link_libraries(ui_app
 enable_testing()
 
 add_subdirectory(application/tests)
+
+# ---------------- RUNTIME IMPORT VALIDATION ----------------
+
+add_executable(runtime_import_test
+    runtime_import_test.cpp
+)
+
+target_link_libraries(runtime_import_test
+    PRIVATE
+    persistence
+    core
+)
