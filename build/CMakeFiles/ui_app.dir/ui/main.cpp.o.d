@@ -390,6 +390,8 @@ CMakeFiles/ui_app.dir/ui/main.cpp.o: \
  /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Edge.hpp \
  /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp \
+ /usr/include/c++/13/iostream \
  /home/vardan/DesktopNavigationSystem/ui/mainwindow/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \

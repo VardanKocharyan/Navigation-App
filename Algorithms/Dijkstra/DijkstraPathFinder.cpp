@@ -59,6 +59,14 @@ DijkstraPathFinder::findPath(
     NodeId destination
 ) const
 {
+/*
+    std::cout
+        << "Dijkstra source: "
+        << source
+        << " destination: "
+        << destination
+        << std::endl;
+*/
     constexpr Cost INF =
         std::numeric_limits<Cost>::infinity();
 
@@ -81,7 +89,6 @@ DijkstraPathFinder::findPath(
 
     queue.emplace(source, 0);
 
-
     while (!queue.empty())
     {
         const NodeState current = queue.top();
@@ -96,20 +103,25 @@ DijkstraPathFinder::findPath(
         visited.insert(current.node);
 
 
-        if (current.node == destination)
+        if (current.node == destination) {
+/*
+            std::cout
+                << "Destination reached: "
+                << destination
+                << std::endl;
+*/
             break;
+        }
 
 
         const auto outgoingEdges =
             graph.getOutgoingEdges(current.node);
-
-
+        
         for (const auto& edge : outgoingEdges)
         {
             NodeId next = edge.to();
 
             Cost weight = edge.weight();
-
 
             Cost newDistance =
                 distance[current.node] + weight;
@@ -134,6 +146,12 @@ DijkstraPathFinder::findPath(
 
     if (!distance.contains(destination))
     {
+/*
+        std::cout
+            << "Destination NOT reachable: "
+            << destination
+            << std::endl;
+*/
         return core::model::Route{};
     }
 

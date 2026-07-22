@@ -1,0 +1,12 @@
+NavigationServiceTest.ValidRouteReturnsSuccessfulResult 6 0.000529091
+NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder 6 0.000579249
+NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder 6 0.000586852
+NavigationServiceTest.EmptyRouteReturnsUnavailable 6 0.000516104
+RoutePresentationBuilderTest.BuildsGeometryFromRoute 6 0.000548486
+NavigationServiceTest.MultiDestinationRoutePreservesOrder 3 0.00109776
+NavigationServiceTest.EmptyDestinationListFails 3 0.00103718
+NavigationServiceTest.MultiDestinationInvalidStartFails 3 0.00121384
+NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment 3 0.00113417
+NavigationServiceTest.ConsecutiveIdenticalDestinationsFail 1 0.00250249
+NavigationServiceTest.MultiDestinationFailureIsFailFast 3 0.000908597
+---

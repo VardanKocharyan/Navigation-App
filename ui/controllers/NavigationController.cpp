@@ -21,9 +21,7 @@ void NavigationController::requestRoute(
 )
 {
 
-    qDebug() << "NavigationController::requestRoute called";
-
-    auto response =
+        auto response =
         navigationService.calculateRoute(
             start,
             destination
@@ -38,9 +36,6 @@ void NavigationController::requestRoute(
                 *response.route
             );
 
-            qDebug()
-            << "UI received geometry points:"
-            << response.route->geometryPoints.size();
         }
     }
     else

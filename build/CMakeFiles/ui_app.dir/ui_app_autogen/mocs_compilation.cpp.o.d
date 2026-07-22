@@ -337,6 +337,8 @@ CMakeFiles/ui_app.dir/ui_app_autogen/mocs_compilation.cpp.o: \
  /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationData.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/types/Types.hpp \
+ /home/vardan/DesktopNavigationSystem/build/ui_app_autogen/LGPZVGMTGO/moc_SceneController.cpp \
+ /home/vardan/DesktopNavigationSystem/build/ui_app_autogen/LGPZVGMTGO/../../../ui/controllers/SceneController.h \
  /home/vardan/DesktopNavigationSystem/build/ui_app_autogen/GPO5BWUE2A/moc_MainWindow.cpp \
  /home/vardan/DesktopNavigationSystem/build/ui_app_autogen/GPO5BWUE2A/../../../ui/mainwindow/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \

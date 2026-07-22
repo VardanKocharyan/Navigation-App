@@ -275,6 +275,18 @@ GraphBuilder::build(
                         weight
                     }
                 );
+
+                if (!road.oneway)
+                {
+                    graph.addEdge(
+                        core::model::Edge{
+                        nextEdgeId++,
+                        to,
+                        from,
+                        weight
+                }
+    );
+}
             }
         }
     }

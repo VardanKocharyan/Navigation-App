@@ -375,6 +375,7 @@ CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRectF \
@@ -408,5 +409,7 @@ CMakeFiles/ui_app.dir/ui/rendering/MapRenderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QBrush \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
  /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationData.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp

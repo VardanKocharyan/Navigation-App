@@ -48,6 +48,14 @@ public:
     }
 
     [[nodiscard]]
+    bool boolean() const
+    {
+        return std::get<bool>(
+            value_
+        );
+    }
+
+    [[nodiscard]]
     bool isNumber() const noexcept
     {
         return std::holds_alternative<double>(value_);
@@ -635,6 +643,28 @@ readStringProperty(
     return value->string();
 }
 
+[[nodiscard]]
+bool
+readOnewayProperty(
+    const JsonValue& object
+)
+{
+    const auto* value =
+        findObjectValue(
+            object,
+            "oneway"
+        );
+
+
+    if (value == nullptr ||
+        !value->isString())
+    {
+        return false;
+    }
+
+
+    return value->string() == "yes";
+}
 
 [[nodiscard]]
 bool
@@ -802,6 +832,11 @@ parseFeature(
     if (feature.highway.empty()) {
         return false;
     }
+
+    feature.oneway =
+        readOnewayProperty(
+            *properties
+        );
 
     return parseGeometry(
         *geometry,

@@ -2,6 +2,7 @@
 
 #include <QGraphicsScene>
 #include <QGraphicsPathItem>
+#include <QGraphicsEllipseItem>
 #include <QPointF>
 #include <QRectF>
 
@@ -9,6 +10,8 @@
 
 #include <core/graph/Graph.hpp>
 #include <core/types/Types.hpp>
+
+#include <optional>
 
 #include "ImportedGraph.hpp"
 
@@ -45,8 +48,27 @@ public:
         const application::RoutePresentationData& route
     );
 
-
     void clearRoute();
+
+    void setStartMarker(
+        const persistence::Coordinate& coordinate
+    );
+
+
+    void setDestinationMarker(
+        const persistence::Coordinate& coordinate
+    );
+
+    void clearMarkers();
+
+    std::optional<
+        persistence::Coordinate
+    >
+    toGeographicPoint(
+        const QPointF& scenePoint
+    ) const;
+
+    void fitGraphInView();
 
 
 private:
@@ -77,6 +99,13 @@ private:
 
     QGraphicsPathItem*
         routeItem{nullptr};
+
+    QGraphicsEllipseItem*
+        startMarkerItem{nullptr};
+
+
+    QGraphicsEllipseItem*
+        destinationMarkerItem{nullptr};
 
 
     double minLongitude_{};

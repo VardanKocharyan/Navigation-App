@@ -310,4 +310,5 @@ application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.o
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationService.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationResponse.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationData.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp
+ /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp

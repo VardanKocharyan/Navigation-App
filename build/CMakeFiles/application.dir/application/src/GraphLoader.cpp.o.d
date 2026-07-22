@@ -229,4 +229,5 @@ CMakeFiles/application.dir/application/src/GraphLoader.cpp.o: \
  /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Edge.hpp \
  /home/vardan/DesktopNavigationSystem/persistence/include/IGraphImporter.h \
  /home/vardan/DesktopNavigationSystem/persistence/include/ImportedGraph.hpp \
- /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /usr/include/c++/13/iostream

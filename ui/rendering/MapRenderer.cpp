@@ -8,6 +8,7 @@
 #include <QPainterPath>
 #include <QPen>
 #include <QRectF>
+#include <QBrush>
 
 #include <application/RoutePresentationData.hpp>
 
@@ -198,7 +199,7 @@ MapRenderer::renderGraph(
 
 
     roadPen.setWidthF(
-        1.0
+        2.0
     );
 
 
@@ -299,7 +300,7 @@ MapRenderer::renderRoute(
 
 
     routePen.setWidthF(
-        4.0
+        2.0
     );
 
 
@@ -320,6 +321,43 @@ MapRenderer::renderRoute(
 
     scene->update();
 
+}
+
+std::optional<
+    persistence::Coordinate
+>
+MapRenderer::toGeographicPoint(
+    const QPointF& scenePoint
+) const
+{
+    if (!coordinateTransformReady_)
+    {
+        return std::nullopt;
+    }
+
+
+    persistence::Coordinate coordinate;
+
+
+    coordinate.longitude =
+        (
+            scenePoint.x() /
+            coordinateScale_
+        )
+        +
+        minLongitude_;
+
+
+    coordinate.latitude =
+        minLatitude_
+        -
+        (
+            scenePoint.y() /
+            coordinateScale_
+        );
+
+
+    return coordinate;
 }
 
 
@@ -441,11 +479,11 @@ MapRenderer::frameScene(
         QGraphicsView* view =
             views.front();
 
-
         view->fitInView(
             framedBounds,
             Qt::KeepAspectRatio
         );
+
     }
 }
 
@@ -472,4 +510,207 @@ MapRenderer::clearRoute()
 
     routeItem =
         nullptr;
+}
+
+void
+MapRenderer::setStartMarker(
+    const persistence::Coordinate& coordinate
+)
+{
+    if (!scene)
+    {
+        return;
+    }
+
+
+    if (startMarkerItem)
+    {
+        scene->removeItem(
+            startMarkerItem
+        );
+
+
+        delete startMarkerItem;
+
+
+        startMarkerItem =
+            nullptr;
+    }
+
+
+    const QPointF scenePoint =
+        toScenePoint(
+            coordinate
+        );
+
+
+    constexpr double markerSize =
+        12.0;
+
+
+    startMarkerItem =
+        scene->addEllipse(
+            scenePoint.x() -
+                markerSize / 2.0,
+            scenePoint.y() -
+                markerSize / 2.0,
+            markerSize,
+            markerSize
+        );
+
+
+    if (!startMarkerItem)
+    {
+        return;
+    }
+
+
+    startMarkerItem->setBrush(
+        QBrush(
+            Qt::green
+        )
+    );
+
+
+    startMarkerItem->setZValue(
+        2.0
+    );
+}
+
+void
+MapRenderer::setDestinationMarker(
+    const persistence::Coordinate& coordinate
+)
+{
+    if (!scene)
+    {
+        return;
+    }
+
+
+    if (destinationMarkerItem)
+    {
+        scene->removeItem(
+            destinationMarkerItem
+        );
+
+
+        delete destinationMarkerItem;
+
+
+        destinationMarkerItem =
+            nullptr;
+    }
+
+
+    const QPointF scenePoint =
+        toScenePoint(
+            coordinate
+        );
+
+
+    constexpr double markerSize =
+        12.0;
+
+
+    destinationMarkerItem =
+        scene->addEllipse(
+            scenePoint.x() -
+                markerSize / 2.0,
+            scenePoint.y() -
+                markerSize / 2.0,
+            markerSize,
+            markerSize
+        );
+
+
+    if (!destinationMarkerItem)
+    {
+        return;
+    }
+
+
+    destinationMarkerItem->setBrush(
+        QBrush(
+            Qt::red
+        )
+    );
+
+
+    destinationMarkerItem->setZValue(
+        2.0
+    );
+}
+
+void
+MapRenderer::clearMarkers()
+{
+    if (!scene)
+    {
+        return;
+    }
+
+
+    if (startMarkerItem)
+    {
+        scene->removeItem(
+            startMarkerItem
+        );
+
+
+        delete startMarkerItem;
+
+
+        startMarkerItem =
+            nullptr;
+    }
+
+
+    if (destinationMarkerItem)
+    {
+        scene->removeItem(
+            destinationMarkerItem
+        );
+
+
+        delete destinationMarkerItem;
+
+
+        destinationMarkerItem =
+            nullptr;
+    }
+}
+
+void
+MapRenderer::fitGraphInView()
+{
+
+    if (!scene ||
+        !roadNetworkItem)
+    {
+        qDebug()
+            << "fitGraphInView aborted";
+
+        return;
+    }
+
+    const auto views =
+        scene->views();
+
+    if (views.isEmpty())
+    {
+        qDebug()
+            << "fitGraphInView: no views";
+
+        return;
+    }
+
+    QGraphicsView* view =
+        views.front();
+
+    view->fitInView(
+        roadNetworkItem->boundingRect(),
+        Qt::KeepAspectRatio
+    );
+
 }

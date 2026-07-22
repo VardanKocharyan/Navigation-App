@@ -1,0 +1,308 @@
+Start testing: Jul 22 20:20 +04
+----------------------------------------------------------
+1/11 Testing: NavigationServiceTest.MultiDestinationRoutePreservesOrder
+1/11 Test: NavigationServiceTest.MultiDestinationRoutePreservesOrder
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.MultiDestinationRoutePreservesOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.MultiDestinationRoutePreservesOrder" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.MultiDestinationRoutePreservesOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.MultiDestinationRoutePreservesOrder
+Multi segment: 0 | source: 1 | destination: 2
+Multi segment: 1 | source: 2 | destination: 3
+[       OK ] NavigationServiceTest.MultiDestinationRoutePreservesOrder (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.MultiDestinationRoutePreservesOrder" end time: Jul 22 20:20 +04
+"NavigationServiceTest.MultiDestinationRoutePreservesOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: NavigationServiceTest.EmptyDestinationListFails
+2/11 Test: NavigationServiceTest.EmptyDestinationListFails
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.EmptyDestinationListFails" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.EmptyDestinationListFails" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.EmptyDestinationListFails
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.EmptyDestinationListFails
+[       OK ] NavigationServiceTest.EmptyDestinationListFails (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.EmptyDestinationListFails" end time: Jul 22 20:20 +04
+"NavigationServiceTest.EmptyDestinationListFails" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: NavigationServiceTest.MultiDestinationInvalidStartFails
+3/11 Test: NavigationServiceTest.MultiDestinationInvalidStartFails
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.MultiDestinationInvalidStartFails" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.MultiDestinationInvalidStartFails" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.MultiDestinationInvalidStartFails
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.MultiDestinationInvalidStartFails
+[       OK ] NavigationServiceTest.MultiDestinationInvalidStartFails (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.MultiDestinationInvalidStartFails" end time: Jul 22 20:20 +04
+"NavigationServiceTest.MultiDestinationInvalidStartFails" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: NavigationServiceTest.ValidRouteReturnsSuccessfulResult
+4/11 Test: NavigationServiceTest.ValidRouteReturnsSuccessfulResult
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.ValidRouteReturnsSuccessfulResult" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.ValidRouteReturnsSuccessfulResult" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.ValidRouteReturnsSuccessfulResult
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.ValidRouteReturnsSuccessfulResult
+[       OK ] NavigationServiceTest.ValidRouteReturnsSuccessfulResult (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.ValidRouteReturnsSuccessfulResult" end time: Jul 22 20:20 +04
+"NavigationServiceTest.ValidRouteReturnsSuccessfulResult" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/11 Testing: NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment
+5/11 Test: NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment
+Multi segment: 0 | source: 1 | destination: 2
+Multi segment: 1 | source: 2 | destination: 99
+[       OK ] NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment" end time: Jul 22 20:20 +04
+"NavigationServiceTest.InvalidDestinationFailsAtCorrectSegment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: NavigationServiceTest.ConsecutiveIdenticalDestinationsFail
+6/11 Test: NavigationServiceTest.ConsecutiveIdenticalDestinationsFail
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.ConsecutiveIdenticalDestinationsFail" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.ConsecutiveIdenticalDestinationsFail" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.ConsecutiveIdenticalDestinationsFail
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.ConsecutiveIdenticalDestinationsFail
+Multi segment: 0 | source: 1 | destination: 2
+Multi segment: 1 | source: 2 | destination: 2
+IDENTICAL DESTINATIONS DETECTED
+[       OK ] NavigationServiceTest.ConsecutiveIdenticalDestinationsFail (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.ConsecutiveIdenticalDestinationsFail" end time: Jul 22 20:20 +04
+"NavigationServiceTest.ConsecutiveIdenticalDestinationsFail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: NavigationServiceTest.MultiDestinationFailureIsFailFast
+7/11 Test: NavigationServiceTest.MultiDestinationFailureIsFailFast
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.MultiDestinationFailureIsFailFast" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.MultiDestinationFailureIsFailFast" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.MultiDestinationFailureIsFailFast
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.MultiDestinationFailureIsFailFast
+Multi segment: 0 | source: 1 | destination: 2
+[       OK ] NavigationServiceTest.MultiDestinationFailureIsFailFast (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.MultiDestinationFailureIsFailFast" end time: Jul 22 20:20 +04
+"NavigationServiceTest.MultiDestinationFailureIsFailFast" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder
+8/11 Test: NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder
+[       OK ] NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder" end time: Jul 22 20:20 +04
+"NavigationServiceTest.InvalidStartNodeDoesNotCallPathFinder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder
+9/11 Test: NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder
+[       OK ] NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder" end time: Jul 22 20:20 +04
+"NavigationServiceTest.InvalidDestinationNodeDoesNotCallPathFinder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: NavigationServiceTest.EmptyRouteReturnsUnavailable
+10/11 Test: NavigationServiceTest.EmptyRouteReturnsUnavailable
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=NavigationServiceTest.EmptyRouteReturnsUnavailable" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"NavigationServiceTest.EmptyRouteReturnsUnavailable" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = NavigationServiceTest.EmptyRouteReturnsUnavailable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NavigationServiceTest
+[ RUN      ] NavigationServiceTest.EmptyRouteReturnsUnavailable
+[       OK ] NavigationServiceTest.EmptyRouteReturnsUnavailable (0 ms)
+[----------] 1 test from NavigationServiceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NavigationServiceTest.EmptyRouteReturnsUnavailable" end time: Jul 22 20:20 +04
+"NavigationServiceTest.EmptyRouteReturnsUnavailable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: RoutePresentationBuilderTest.BuildsGeometryFromRoute
+11/11 Test: RoutePresentationBuilderTest.BuildsGeometryFromRoute
+Command: "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests" "--gtest_filter=RoutePresentationBuilderTest.BuildsGeometryFromRoute" "--gtest_also_run_disabled_tests"
+Directory: /home/vardan/DesktopNavigationSystem/build/application/tests
+"RoutePresentationBuilderTest.BuildsGeometryFromRoute" start time: Jul 22 20:20 +04
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = RoutePresentationBuilderTest.BuildsGeometryFromRoute
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RoutePresentationBuilderTest
+[ RUN      ] RoutePresentationBuilderTest.BuildsGeometryFromRoute
+[       OK ] RoutePresentationBuilderTest.BuildsGeometryFromRoute (0 ms)
+[----------] 1 test from RoutePresentationBuilderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RoutePresentationBuilderTest.BuildsGeometryFromRoute" end time: Jul 22 20:20 +04
+"RoutePresentationBuilderTest.BuildsGeometryFromRoute" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 22 20:20 +04

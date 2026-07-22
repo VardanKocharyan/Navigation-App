@@ -235,7 +235,9 @@ CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o: \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
  /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/RuntimeGeometryProvider.hpp \
  /home/vardan/DesktopNavigationSystem/persistence/include/GeoJSONImporter.hpp \
  /home/vardan/DesktopNavigationSystem/Algorithms/Factory/PathFinderFactory.hpp \
- /home/vardan/DesktopNavigationSystem/Algorithms/Factory/../Types/AlgorithmType.hpp
+ /home/vardan/DesktopNavigationSystem/Algorithms/Factory/../Types/AlgorithmType.hpp \
+ /usr/include/c++/13/iostream

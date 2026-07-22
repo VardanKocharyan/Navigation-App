@@ -8,6 +8,8 @@
 
 #include <core/types/Types.hpp>
 
+#include <optional>
+
 namespace core::graph
 {
 class Graph;
@@ -26,10 +28,12 @@ struct Coordinate;
 
 class QGraphicsScene;
 class QGraphicsView;
+class QShowEvent;
 
 class SceneController;
 class MapRenderer;
 class NavigationController;
+
 
 class MainWindow : public QMainWindow
 {
@@ -50,6 +54,11 @@ public:
 
     ~MainWindow() override = default;
 
+protected:
+
+    void showEvent(
+        QShowEvent* event
+    ) override;
 
 private slots:
 
@@ -62,8 +71,27 @@ private slots:
         const QString& message
     );
 
+    
 
 private:
+
+    std::optional<
+        core::types::NodeId
+    >
+    findNearestNode(
+        const persistence::Coordinate& coordinate
+    ) const;
+
+    std::optional<
+        core::types::NodeId
+    >
+    selectedStartNode_;
+
+    void handleSceneClick(
+        double x,
+        double y
+    );
+
 
     const core::graph::Graph& graph_;
 

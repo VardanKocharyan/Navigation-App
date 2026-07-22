@@ -150,6 +150,7 @@ CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o: /home/var
   /usr/include/c++/13/iomanip \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
@@ -439,6 +440,7 @@ CMakeFiles/application.dir/application/src/GraphLoader.cpp.o: /home/vardan/Deskt
   /usr/include/c++/13/iomanip \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
@@ -633,7 +635,6 @@ CMakeFiles/application.dir/application/src/NavigationService.cpp.o: /home/vardan
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
-  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/iterator_concepts.h \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
@@ -712,8 +713,6 @@ CMakeFiles/application.dir/application/src/NavigationService.cpp.o: /home/vardan
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
-  /usr/include/c++/13/iostream \
-  /usr/include/c++/13/istream \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numbers \
@@ -1208,8 +1207,6 @@ CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: /home/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 
-/usr/include/c++/13/iostream:
-
 /home/vardan/DesktopNavigationSystem/application/src/NavigationService.cpp:
 
 /usr/include/c++/13/utility:
@@ -1287,6 +1284,10 @@ CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: /home/
 /usr/include/c++/13/clocale:
 
 /usr/include/c++/13/cctype:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
@@ -1648,6 +1649,8 @@ CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: /home/
 
 /usr/include/c++/13/ios:
 
+/usr/include/c++/13/iostream:
+
 /usr/include/c++/13/istream:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
@@ -1811,7 +1814,3 @@ CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: /home/
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/c++/13/ext/atomicity.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:

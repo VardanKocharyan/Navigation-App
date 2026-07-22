@@ -61,9 +61,12 @@ RoadFeatureExtractor::extract(
             continue;
         }
 
-        roads.push_back(RoadFeature{
-            feature.lines
-        });
+        roads.push_back(
+            RoadFeature{
+                feature.lines,
+                feature.oneway
+            }
+        );
     }
 
     return roads;

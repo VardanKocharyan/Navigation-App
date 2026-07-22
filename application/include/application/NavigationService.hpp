@@ -9,6 +9,7 @@
 #include <core/types/Types.hpp>
 
 #include "Interfaces/IPathFinder.hpp"
+#include "application/ApplicationTypes.hpp"
 
 namespace application
 {
@@ -26,6 +27,12 @@ public:
     NavigationResponse calculateRoute(
         core::types::NodeId start,
         core::types::NodeId destination
+    );
+
+    MultiDestinationNavigationResponse
+    requestMultiDestinationRoute(
+        core::types::NodeId start,
+        const std::vector<core::types::NodeId>& destinations
     );
 
 private:

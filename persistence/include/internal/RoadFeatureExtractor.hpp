@@ -9,6 +9,8 @@ namespace persistence::internal {
 struct RoadFeature
 {
     std::vector<std::vector<Coordinate>> lines;
+
+    bool oneway{false};
 };
 
 class RoadFeatureExtractor

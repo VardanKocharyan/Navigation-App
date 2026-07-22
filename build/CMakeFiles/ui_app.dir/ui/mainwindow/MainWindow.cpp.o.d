@@ -386,9 +386,9 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /home/vardan/DesktopNavigationSystem/core/include/core/types/Types.hpp \
  /home/vardan/DesktopNavigationSystem/ui/mainwindow/../controllers/SceneController.h \
- /home/vardan/DesktopNavigationSystem/ui/mainwindow/../controllers/NavigationController.hpp \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /home/vardan/DesktopNavigationSystem/ui/mainwindow/../controllers/NavigationController.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationData.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
  /home/vardan/DesktopNavigationSystem/ui/mainwindow/../rendering/MapRenderer.h \
@@ -398,6 +398,7 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPathItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRectF \
@@ -410,8 +411,7 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: \
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationResponse.hpp \
  /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+ /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
@@ -422,9 +422,28 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStatusBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstatusbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QShowEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /usr/include/c++/13/queue /usr/include/c++/13/deque \
- /usr/include/c++/13/bits/stl_deque.h /usr/include/c++/13/bits/deque.tcc \
- /usr/include/c++/13/bits/stl_queue.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h

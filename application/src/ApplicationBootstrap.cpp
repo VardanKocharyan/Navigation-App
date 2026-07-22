@@ -8,6 +8,7 @@
 
 #include <Factory/PathFinderFactory.hpp>
 #include <Types/AlgorithmType.hpp>
+#include <iostream>
 
 #include <stdexcept>
 
@@ -30,6 +31,11 @@ ApplicationBootstrap::ApplicationBootstrap()
     graphLoader->load(
         "persistence/tests/resources/export.geojson"
     );
+
+    std::cout
+        << "Bootstrap coordinates: "
+        << graphLoader->nodeCoordinates().size()
+        << std::endl;
 
 
     pathFinder =

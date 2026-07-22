@@ -32,7 +32,12 @@ public:
 
 };
 
+struct Call
+{
+    core::types::NodeId source;
 
+    core::types::NodeId destination;
+};
 
 class FakePathFinder final
     : public algorithms::IPathFinder
@@ -41,19 +46,27 @@ class FakePathFinder final
 public:
 
     mutable int calls{0};
+    mutable std::vector<Call> callHistory;
 
     core::model::Route routeToReturn;
 
 
     core::model::Route findPath(
         const core::graph::Graph&,
-        core::types::NodeId,
-        core::types::NodeId
+        core::types::NodeId source,
+        core::types::NodeId destination
     ) const override
     {
         ++calls;
 
-        return routeToReturn;
+        callHistory.push_back(
+            Call{
+                source,
+                destination
+            }
+        );
+
+    return routeToReturn;
     }
 
 };
@@ -81,6 +94,215 @@ static core::graph::Graph createTestGraph()
     return graph;
 }
 
+
+
+TEST(
+    NavigationServiceTest,
+    MultiDestinationRoutePreservesOrder
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    core::model::Route::Path path{
+        1,
+        2,
+        3
+    };
+
+
+    pathFinder->routeToReturn =
+        core::model::Route(path);
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations{
+        2,
+        3
+    };
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            1,
+            destinations
+        );
+
+
+    EXPECT_TRUE(
+        result.success
+    );
+
+
+    ASSERT_EQ(
+        result.segments.size(),
+        2
+    );
+
+
+    ASSERT_EQ(
+        pathFinderPtr->callHistory.size(),
+        2
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->callHistory[0].source,
+        1
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->callHistory[0].destination,
+        2
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->callHistory[1].source,
+        2
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->callHistory[1].destination,
+        3
+    );
+}
+
+TEST(
+    NavigationServiceTest,
+    EmptyDestinationListFails
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations;
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            1,
+            destinations
+        );
+
+
+    EXPECT_FALSE(
+        result.success
+    );
+
+
+    EXPECT_EQ(
+        result.message,
+        "No destinations provided"
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->calls,
+        0
+    );
+}
+
+TEST(
+    NavigationServiceTest,
+    MultiDestinationInvalidStartFails
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations{
+        2,
+        3
+    };
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            99,
+            destinations
+        );
+
+
+    EXPECT_FALSE(
+        result.success
+    );
+
+
+    EXPECT_EQ(
+        result.message,
+        "Invalid start node"
+    );
+
+
+    EXPECT_FALSE(
+        result.failure.has_value()
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->calls,
+        0
+    );
+}
 
 
 TEST(
@@ -141,6 +363,250 @@ TEST(
     EXPECT_EQ(
         pathFinderPtr->calls,
         1
+    );
+}
+
+TEST(
+    NavigationServiceTest,
+    InvalidDestinationFailsAtCorrectSegment
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+
+    core::model::Route::Path path{
+        1,
+        2
+    };
+
+
+    pathFinder->routeToReturn =
+        core::model::Route(path);
+
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations{
+        2,
+        99,
+        3
+    };
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            1,
+            destinations
+        );
+
+
+    EXPECT_FALSE(
+        result.success
+    );
+
+
+    ASSERT_TRUE(
+        result.failure.has_value()
+    );
+
+
+    EXPECT_EQ(
+        result.failure->segmentIndex,
+        1
+    );
+
+
+    EXPECT_EQ(
+        result.failure->source,
+        2
+    );
+
+
+    EXPECT_EQ(
+        result.failure->destination,
+        99
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->calls,
+        1
+    );
+
+
+    EXPECT_EQ(
+        result.segments.size(),
+        1
+    );
+}
+
+
+TEST(
+    NavigationServiceTest,
+    ConsecutiveIdenticalDestinationsFail
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+    core::model::Route::Path path{
+        1,
+        2
+    };
+
+    pathFinder->routeToReturn =
+        core::model::Route(path);
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations{
+        2,
+        2
+    };
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            1,
+            destinations
+        );
+
+
+    EXPECT_FALSE(
+        result.success
+    );
+
+
+    ASSERT_TRUE(
+        result.failure.has_value()
+    );
+
+
+    EXPECT_EQ(
+        result.failure->segmentIndex,
+        1
+    );
+
+
+    EXPECT_EQ(
+        result.failure->source,
+        2
+    );
+
+
+    EXPECT_EQ(
+        result.failure->destination,
+        2
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->calls,
+        1
+    );
+}
+
+TEST(
+    NavigationServiceTest,
+    MultiDestinationFailureIsFailFast
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+
+    pathFinder->routeToReturn =
+        core::model::Route();
+
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations{
+        2,
+        3
+    };
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            1,
+            destinations
+        );
+
+
+    EXPECT_FALSE(
+        result.success
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->calls,
+        1
+    );
+
+
+    EXPECT_TRUE(
+        result.segments.empty()
+    );
+
+
+    ASSERT_TRUE(
+        result.failure.has_value()
+    );
+
+
+    EXPECT_EQ(
+        result.failure->segmentIndex,
+        0
     );
 }
 

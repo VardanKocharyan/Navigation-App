@@ -4,6 +4,7 @@
 
 #include <stdexcept>
 #include <utility>
+#include <iostream>
 
 
 namespace application
@@ -46,6 +47,10 @@ GraphLoader::load(
             )
         );
 
+    std::cout
+        << "GraphLoader imported coordinates: "
+        << importedGraph.nodeCoordinates.size()
+        << std::endl;
 
     nodeCoordinates_ =
         std::make_unique<
@@ -58,6 +63,11 @@ GraphLoader::load(
                 importedGraph.nodeCoordinates
             )
         );
+
+    std::cout
+        << "GraphLoader stored coordinates: "
+        << nodeCoordinates_->size()
+        << std::endl;
 }
 
 

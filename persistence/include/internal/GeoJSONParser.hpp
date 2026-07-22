@@ -22,8 +22,17 @@ enum class GeometryType
 struct ParsedFeature
 {
     std::string highway;
-    GeometryType geometryType{GeometryType::Unsupported};
-    std::vector<std::vector<Coordinate>> lines;
+
+    bool oneway{false};
+
+    GeometryType geometryType{
+        GeometryType::Unsupported
+    };
+
+    std::vector<
+        std::vector<Coordinate>
+    >
+    lines;
 };
 
 class GeoJSONParser
