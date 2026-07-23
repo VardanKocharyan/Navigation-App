@@ -6,6 +6,8 @@
 
 #include <core/types/Types.hpp>
 
+#include <vector>
+
 namespace application
 {
 class NavigationService;
@@ -29,6 +31,13 @@ public slots:
         core::types::NodeId destination
     );
 
+    void requestMultiDestinationRoute(
+        core::types::NodeId start,
+        const std::vector<
+            core::types::NodeId
+        >& destinations
+    );
+
 signals:
 
     void routeReady(
@@ -37,6 +46,10 @@ signals:
 
     void navigationFailed(
         const QString& message
+    );
+
+    void multiDestinationRouteReady(
+        const application::RoutePresentationData& route
     );
 
 private:

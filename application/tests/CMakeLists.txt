@@ -4,6 +4,8 @@ add_executable(
     application_tests
     test_navigation_service.cpp
     test_route_presentation_builder.cpp
+    test_route_presentation_aggregator.cpp
+    test_route_optimizer.cpp
 )
 
 target_link_libraries(application_tests

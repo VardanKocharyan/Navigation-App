@@ -4,12 +4,15 @@
 
 #include "application/NavigationResponse.hpp"
 #include "application/INodeGeometryProvider.hpp"
+#include "application/RoutePresentationBuilder.hpp"
+#include "application/RoutePresentationAggregator.hpp"
 
 #include <core/graph/Graph.hpp>
 #include <core/types/Types.hpp>
 
 #include "Interfaces/IPathFinder.hpp"
 #include "application/ApplicationTypes.hpp"
+
 
 namespace application
 {

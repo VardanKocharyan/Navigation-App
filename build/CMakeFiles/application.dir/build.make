@@ -125,10 +125,24 @@ CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/src/RoutePresentationBuilder.cpp -o CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.s
 
+CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o: CMakeFiles/application.dir/flags.make
+CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o: /home/vardan/DesktopNavigationSystem/application/src/RouteOptimizer.cpp
+CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o: CMakeFiles/application.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o -MF CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o.d -o CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o -c /home/vardan/DesktopNavigationSystem/application/src/RouteOptimizer.cpp
+
+CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vardan/DesktopNavigationSystem/application/src/RouteOptimizer.cpp > CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.i
+
+CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/src/RouteOptimizer.cpp -o CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.s
+
 CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o: /home/vardan/DesktopNavigationSystem/application/src/ApplicationBootstrap.cpp
 CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o: CMakeFiles/application.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o -MF CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o.d -o CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o -c /home/vardan/DesktopNavigationSystem/application/src/ApplicationBootstrap.cpp
 
 CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.s: cmake_for
 CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: CMakeFiles/application.dir/flags.make
 CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: /home/vardan/DesktopNavigationSystem/application/src/RuntimeGeometryProvider.cpp
 CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o: CMakeFiles/application.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o -MF CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o.d -o CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o -c /home/vardan/DesktopNavigationSystem/application/src/RuntimeGeometryProvider.cpp
 
 CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.i: cmake_force
@@ -153,14 +167,30 @@ CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/src/RuntimeGeometryProvider.cpp -o CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.s
 
+CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o: CMakeFiles/application.dir/flags.make
+CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o: /home/vardan/DesktopNavigationSystem/application/src/RoutePresentationAggregator.cpp
+CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o: CMakeFiles/application.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o -MF CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o.d -o CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o -c /home/vardan/DesktopNavigationSystem/application/src/RoutePresentationAggregator.cpp
+
+CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vardan/DesktopNavigationSystem/application/src/RoutePresentationAggregator.cpp > CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.i
+
+CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/src/RoutePresentationAggregator.cpp -o CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.s
+
 # Object files for target application
 application_OBJECTS = \
 "CMakeFiles/application.dir/application/src/ApplicationTypes.cpp.o" \
 "CMakeFiles/application.dir/application/src/NavigationService.cpp.o" \
 "CMakeFiles/application.dir/application/src/GraphLoader.cpp.o" \
 "CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.o" \
+"CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o" \
 "CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o" \
-"CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o"
+"CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o" \
+"CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o"
 
 # External object files for target application
 application_EXTERNAL_OBJECTS =
@@ -169,11 +199,13 @@ libapplication.a: CMakeFiles/application.dir/application/src/ApplicationTypes.cp
 libapplication.a: CMakeFiles/application.dir/application/src/NavigationService.cpp.o
 libapplication.a: CMakeFiles/application.dir/application/src/GraphLoader.cpp.o
 libapplication.a: CMakeFiles/application.dir/application/src/RoutePresentationBuilder.cpp.o
+libapplication.a: CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o
 libapplication.a: CMakeFiles/application.dir/application/src/ApplicationBootstrap.cpp.o
 libapplication.a: CMakeFiles/application.dir/application/src/RuntimeGeometryProvider.cpp.o
+libapplication.a: CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o
 libapplication.a: CMakeFiles/application.dir/build.make
 libapplication.a: CMakeFiles/application.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libapplication.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libapplication.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/application.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/application.dir/link.txt --verbose=$(VERBOSE)
 

@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "application/tests/application_tests_autogen/timestamp" "custom" "application/tests/application_tests_autogen/deps"
   "/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests_autogen/mocs_compilation.cpp" "application/tests/CMakeFiles/application_tests.dir/application_tests_autogen/mocs_compilation.cpp.o" "gcc" "application/tests/CMakeFiles/application_tests.dir/application_tests_autogen/mocs_compilation.cpp.o.d"
   "/home/vardan/DesktopNavigationSystem/application/tests/test_navigation_service.cpp" "application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.o" "gcc" "application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.o.d"
+  "/home/vardan/DesktopNavigationSystem/application/tests/test_route_optimizer.cpp" "application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o" "gcc" "application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o.d"
+  "/home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp" "application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o" "gcc" "application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o.d"
   "/home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_builder.cpp" "application/tests/CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.o" "gcc" "application/tests/CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.o.d"
   )
 

@@ -42,13 +42,34 @@ struct Call
 class FakePathFinder final
     : public algorithms::IPathFinder
 {
-
 public:
 
+    struct Call
+    {
+        core::types::NodeId source;
+        core::types::NodeId destination;
+    };
+
+
+    struct RouteMapping
+    {
+        core::types::NodeId source;
+        core::types::NodeId destination;
+
+        core::model::Route route;
+    };
+
+
     mutable int calls{0};
+
+
     mutable std::vector<Call> callHistory;
 
+
     core::model::Route routeToReturn;
+
+
+    std::vector<RouteMapping> routes;
 
 
     core::model::Route findPath(
@@ -59,6 +80,7 @@ public:
     {
         ++calls;
 
+
         callHistory.push_back(
             Call{
                 source,
@@ -66,12 +88,23 @@ public:
             }
         );
 
-    return routeToReturn;
+
+        for (const auto& mapping : routes)
+        {
+            if (
+                mapping.source == source
+                &&
+                mapping.destination == destination
+            )
+            {
+                return mapping.route;
+            }
+        }
+
+
+        return routeToReturn;
     }
-
 };
-
-
 
 static core::graph::Graph createTestGraph()
 {
@@ -94,6 +127,114 @@ static core::graph::Graph createTestGraph()
     return graph;
 }
 
+
+TEST(
+    NavigationServiceTest,
+    MultiDestinationRouteBuildsAggregatedPresentation
+)
+{
+    auto graph =
+        createTestGraph();
+
+
+    auto pathFinder =
+        std::make_unique<FakePathFinder>();
+
+
+    pathFinder->routes.push_back(
+        {
+            1,
+            2,
+            core::model::Route(
+                {
+                    1,
+                    2
+                }
+            )
+        }
+    );
+
+
+    pathFinder->routes.push_back(
+        {
+            2,
+            3,
+            core::model::Route(
+                {
+                    2,
+                    3
+                }
+            )
+        }
+    );
+
+
+    auto* pathFinderPtr =
+        pathFinder.get();
+
+
+    FakeGeometryProvider geometryProvider;
+
+
+    NavigationService service(
+        graph,
+        std::move(pathFinder),
+        geometryProvider
+    );
+
+
+    DestinationList destinations{
+        2,
+        3
+    };
+
+
+    auto result =
+        service.requestMultiDestinationRoute(
+            1,
+            destinations
+        );
+
+
+    EXPECT_TRUE(
+        result.success
+    );
+
+
+    ASSERT_TRUE(
+        result.route.has_value()
+    );
+
+
+    ASSERT_EQ(
+        result.route->geometryPoints.size(),
+        3
+    );
+
+
+    EXPECT_DOUBLE_EQ(
+        result.route->geometryPoints[0].latitude,
+        1.0
+    );
+
+
+    EXPECT_DOUBLE_EQ(
+        result.route->geometryPoints[1].latitude,
+        2.0
+    );
+
+
+    EXPECT_DOUBLE_EQ(
+        result.route->geometryPoints[2].latitude,
+        3.0
+    );
+
+
+    EXPECT_EQ(
+        pathFinderPtr->calls,
+        2
+    );
+}
 
 
 TEST(

@@ -409,8 +409,10 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: \
  /home/vardan/DesktopNavigationSystem/persistence/include/ImportedGraph.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationService.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationResponse.hpp \
- /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationBuilder.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationAggregator.hpp \
+ /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
@@ -446,4 +448,7 @@ CMakeFiles/ui_app.dir/ui/mainwindow/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h

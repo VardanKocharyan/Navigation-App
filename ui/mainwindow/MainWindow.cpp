@@ -10,6 +10,7 @@
 #include <core/graph/Graph.hpp>
 
 #include <limits>
+#include <algorithm>
 
 #include <QGraphicsScene>
 #include <QGraphicsView>
@@ -17,6 +18,8 @@
 #include <QShowEvent>
 #include <QTimer>
 #include <QPointF>
+#include <QPushButton>
+
 
 MainWindow::MainWindow(
     application::NavigationService& navigationService,
@@ -33,6 +36,7 @@ MainWindow::MainWindow(
     nodeCoordinates_(nodeCoordinates),
     scene(nullptr),
     graphicsView(nullptr),
+    calculateRouteButton(nullptr),
     sceneController(nullptr),
     navigationController(nullptr),
     mapRenderer(nullptr)
@@ -57,6 +61,11 @@ MainWindow::MainWindow(
             this
         );
 
+    calculateRouteButton =
+        new QPushButton(
+            "Calculate Route",
+            this
+        );
 
     graphicsView->setScene(
         scene
@@ -74,7 +83,6 @@ MainWindow::MainWindow(
         this,
         &MainWindow::handleSceneClick
     );
-
 
     mapRenderer =
         new MapRenderer(
@@ -102,6 +110,19 @@ MainWindow::MainWindow(
         &MainWindow::onRouteReady
     );
 
+    connect(
+        calculateRouteButton,
+        &QPushButton::clicked,
+        this,
+        &MainWindow::calculateMultiDestinationRoute
+    );
+
+    connect(
+        navigationController,
+        &NavigationController::multiDestinationRouteReady,
+        this,
+        &MainWindow::onMultiDestinationRouteReady
+    );
 
     connect(
         navigationController,
@@ -201,72 +222,70 @@ MainWindow::handleSceneClick(
 
         statusBar()->showMessage(
             "Start point selected. "
-            "Select destination."
+            "Select destinations."
         );
 
 
         return;
     }
-
-
-    const auto startNodeId =
-        *selectedStartNode_;
 
 
     const auto destinationNodeId =
         *nearestNodeId;
 
 
-    qDebug()
-        << "Destination node selected:"
-        << destinationNodeId;
-
-
-    if (startNodeId ==
-        destinationNodeId)
+    if (
+        destinationNodeId ==
+        *selectedStartNode_
+    )
     {
-        qDebug()
-            << "Start and destination are identical";
-
-
-        mapRenderer->clearMarkers();
-
-
-        selectedStartNode_.reset();
-
-
         statusBar()->showMessage(
-            "Start and destination cannot be identical."
+            "Destination cannot be "
+            "the same as the start."
         );
-
 
         return;
     }
+
+
+    const auto alreadySelected =
+        std::find(
+            selectedDestinationNodes_.begin(),
+            selectedDestinationNodes_.end(),
+            destinationNodeId
+        );
+
+
+    if (
+        alreadySelected !=
+        selectedDestinationNodes_.end()
+    )
+    {
+        statusBar()->showMessage(
+            "Destination already selected."
+        );
+
+        return;
+    }
+
+
+    selectedDestinationNodes_.push_back(
+        destinationNodeId
+    );
+
 
     mapRenderer->setDestinationMarker(
         *geographicPoint
     );
 
-    const auto startOutgoingEdges =
-        graph_.getOutgoingEdges(
-            startNodeId
-        );
-
-
-    const auto destinationOutgoingEdges =
-        graph_.getOutgoingEdges(
-            destinationNodeId
-        );
-
-    navigationController->requestRoute(
-        startNodeId,
-        destinationNodeId
-    );
-
-    selectedStartNode_.reset();
 
     statusBar()->showMessage(
-        "Route requested."
+        QString(
+            "Destination %1 selected."
+        )
+        .arg(
+            selectedDestinationNodes_.size()
+        )
     );
 }
 
@@ -378,6 +397,58 @@ MainWindow::showEvent(
     mapRenderer->fitGraphInView();
 }
 
+void
+MainWindow::onMultiDestinationRouteReady(
+    const application::RoutePresentationData& route
+)
+{
+    mapRenderer->renderRoute(
+        route
+    );
 
 
+    selectedStartNode_.reset();
 
+
+    selectedDestinationNodes_.clear();
+
+
+    statusBar()->showMessage(
+        "Multi-destination route ready."
+    );
+}
+
+void
+MainWindow::calculateMultiDestinationRoute()
+{
+    if (!selectedStartNode_.has_value())
+    {
+        statusBar()->showMessage(
+            "Select a start point first."
+        );
+
+        return;
+    }
+
+
+    if (selectedDestinationNodes_.empty())
+    {
+        statusBar()->showMessage(
+            "Select at least one destination."
+        );
+
+        return;
+    }
+
+
+    navigationController->
+        requestMultiDestinationRoute(
+            *selectedStartNode_,
+            selectedDestinationNodes_
+        );
+
+
+    statusBar()->showMessage(
+        "Multi-destination route requested."
+    );
+}

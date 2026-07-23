@@ -1,8 +1,11 @@
 add_library(application
-    src/NavigationService.cpp
-    src/GraphLoader.cpp
     src/ApplicationTypes.cpp
+    src/GraphLoader.cpp
+    src/NavigationService.cpp
     src/RoutePresentationBuilder.cpp
+    src/RoutePresentationAggregator.cpp
+    src/RouteOptimizer.cpp
+    src/RuntimeGeometryProvider.cpp
     src/ApplicationBootstrap.cpp
 )
 

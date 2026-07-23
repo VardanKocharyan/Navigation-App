@@ -4,6 +4,7 @@
 #include <unordered_map>
 
 #include "core/types/Types.hpp"
+#include "ImportedGraph.hpp"
 
 namespace core::graph
 {
@@ -13,11 +14,6 @@ class Graph;
 namespace algorithms
 {
 class IPathFinder;
-}
-
-namespace persistence
-{
-struct Coordinate;
 }
 
 namespace application

@@ -216,6 +216,54 @@ test_navigation_service.cpp.s:
 	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.s
 .PHONY : test_navigation_service.cpp.s
 
+test_route_optimizer.o: test_route_optimizer.cpp.o
+.PHONY : test_route_optimizer.o
+
+# target to build an object file
+test_route_optimizer.cpp.o:
+	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o
+.PHONY : test_route_optimizer.cpp.o
+
+test_route_optimizer.i: test_route_optimizer.cpp.i
+.PHONY : test_route_optimizer.i
+
+# target to preprocess a source file
+test_route_optimizer.cpp.i:
+	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.i
+.PHONY : test_route_optimizer.cpp.i
+
+test_route_optimizer.s: test_route_optimizer.cpp.s
+.PHONY : test_route_optimizer.s
+
+# target to generate assembly for a file
+test_route_optimizer.cpp.s:
+	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.s
+.PHONY : test_route_optimizer.cpp.s
+
+test_route_presentation_aggregator.o: test_route_presentation_aggregator.cpp.o
+.PHONY : test_route_presentation_aggregator.o
+
+# target to build an object file
+test_route_presentation_aggregator.cpp.o:
+	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o
+.PHONY : test_route_presentation_aggregator.cpp.o
+
+test_route_presentation_aggregator.i: test_route_presentation_aggregator.cpp.i
+.PHONY : test_route_presentation_aggregator.i
+
+# target to preprocess a source file
+test_route_presentation_aggregator.cpp.i:
+	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.i
+.PHONY : test_route_presentation_aggregator.cpp.i
+
+test_route_presentation_aggregator.s: test_route_presentation_aggregator.cpp.s
+.PHONY : test_route_presentation_aggregator.s
+
+# target to generate assembly for a file
+test_route_presentation_aggregator.cpp.s:
+	cd /home/vardan/DesktopNavigationSystem/build && $(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.s
+.PHONY : test_route_presentation_aggregator.cpp.s
+
 test_route_presentation_builder.o: test_route_presentation_builder.cpp.o
 .PHONY : test_route_presentation_builder.o
 
@@ -258,6 +306,12 @@ help:
 	@echo "... test_navigation_service.o"
 	@echo "... test_navigation_service.i"
 	@echo "... test_navigation_service.s"
+	@echo "... test_route_optimizer.o"
+	@echo "... test_route_optimizer.i"
+	@echo "... test_route_optimizer.s"
+	@echo "... test_route_presentation_aggregator.o"
+	@echo "... test_route_presentation_aggregator.i"
+	@echo "... test_route_presentation_aggregator.s"
 	@echo "... test_route_presentation_builder.o"
 	@echo "... test_route_presentation_builder.i"
 	@echo "... test_route_presentation_builder.s"

@@ -205,6 +205,9 @@ CMakeFiles/application.dir/application/src/NavigationService.cpp.o: \
  /usr/include/c++/13/bits/vector.tcc \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/types/Types.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationBuilder.hpp \
+ /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationAggregator.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/graph/Graph.hpp \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
@@ -215,8 +218,6 @@ CMakeFiles/application.dir/application/src/NavigationService.cpp.o: \
  /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Node.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Edge.hpp \
  /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationBuilder.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc

@@ -114,7 +114,7 @@ application/tests/clean: application/tests/CMakeFiles/application_tests_autogen.
 CMakeFiles/core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=18,19,20,21,22 "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=22,23,24,25,26 "Built target core"
 .PHONY : CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
@@ -166,7 +166,7 @@ CMakeFiles/algorithms.dir/clean:
 CMakeFiles/persistence.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/persistence.dir/build.make CMakeFiles/persistence.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/persistence.dir/build.make CMakeFiles/persistence.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=23,24,25,26,27,28 "Built target persistence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=27,28,29,30,31,32 "Built target persistence"
 .PHONY : CMakeFiles/persistence.dir/all
 
 # Build rule for subdir invocation for target.
@@ -194,12 +194,12 @@ CMakeFiles/application.dir/all: CMakeFiles/algorithms.dir/all
 CMakeFiles/application.dir/all: CMakeFiles/persistence.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target application"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13 "Built target application"
 .PHONY : CMakeFiles/application.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/application.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/application.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : CMakeFiles/application.dir/rule
@@ -225,12 +225,12 @@ CMakeFiles/ui_app.dir/all: CMakeFiles/ui_app_autogen_timestamp_deps.dir/all
 CMakeFiles/ui_app.dir/all: CMakeFiles/ui_app_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app.dir/build.make CMakeFiles/ui_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app.dir/build.make CMakeFiles/ui_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41 "Built target ui_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45 "Built target ui_app"
 .PHONY : CMakeFiles/ui_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ui_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ui_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : CMakeFiles/ui_app.dir/rule
@@ -254,7 +254,7 @@ CMakeFiles/runtime_import_test.dir/all: CMakeFiles/runtime_import_test_autogen_t
 CMakeFiles/runtime_import_test.dir/all: CMakeFiles/runtime_import_test_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test.dir/build.make CMakeFiles/runtime_import_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=29,30,31,32 "Built target runtime_import_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=33,34,35,36 "Built target runtime_import_test"
 .PHONY : CMakeFiles/runtime_import_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -288,7 +288,7 @@ CMakeFiles/ui_app_autogen_timestamp_deps.dir/all: CMakeFiles/application.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ui_app_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ui_app_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : CMakeFiles/ui_app_autogen_timestamp_deps.dir/rule
@@ -309,12 +309,12 @@ CMakeFiles/ui_app_autogen_timestamp_deps.dir/clean:
 CMakeFiles/ui_app_autogen.dir/all: CMakeFiles/ui_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app_autogen.dir/build.make CMakeFiles/ui_app_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ui_app_autogen.dir/build.make CMakeFiles/ui_app_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=42 "Built target ui_app_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=46 "Built target ui_app_autogen"
 .PHONY : CMakeFiles/ui_app_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ui_app_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ui_app_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : CMakeFiles/ui_app_autogen.dir/rule
@@ -362,7 +362,7 @@ CMakeFiles/runtime_import_test_autogen_timestamp_deps.dir/clean:
 CMakeFiles/runtime_import_test_autogen.dir/all: CMakeFiles/runtime_import_test_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test_autogen.dir/build.make CMakeFiles/runtime_import_test_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runtime_import_test_autogen.dir/build.make CMakeFiles/runtime_import_test_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=33 "Built target runtime_import_test_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=37 "Built target runtime_import_test_autogen"
 .PHONY : CMakeFiles/runtime_import_test_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -393,12 +393,12 @@ application/tests/CMakeFiles/application_tests.dir/all: application/tests/CMakeF
 application/tests/CMakeFiles/application_tests.dir/all: application/tests/CMakeFiles/application_tests_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests.dir/build.make application/tests/CMakeFiles/application_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=12,13,14,15,16 "Built target application_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=14,15,16,17,18,19,20 "Built target application_tests"
 .PHONY : application/tests/CMakeFiles/application_tests.dir/all
 
 # Build rule for subdir invocation for target.
 application/tests/CMakeFiles/application_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/tests/CMakeFiles/application_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : application/tests/CMakeFiles/application_tests.dir/rule
@@ -426,7 +426,7 @@ application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/all: C
 
 # Build rule for subdir invocation for target.
 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/rule
@@ -447,12 +447,12 @@ application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/clean:
 application/tests/CMakeFiles/application_tests_autogen.dir/all: application/tests/CMakeFiles/application_tests_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests_autogen.dir/build.make application/tests/CMakeFiles/application_tests_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f application/tests/CMakeFiles/application_tests_autogen.dir/build.make application/tests/CMakeFiles/application_tests_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=17 "Built target application_tests_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=21 "Built target application_tests_autogen"
 .PHONY : application/tests/CMakeFiles/application_tests_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 application/tests/CMakeFiles/application_tests_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/tests/CMakeFiles/application_tests_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vardan/DesktopNavigationSystem/build/CMakeFiles 0
 .PHONY : application/tests/CMakeFiles/application_tests_autogen.dir/rule

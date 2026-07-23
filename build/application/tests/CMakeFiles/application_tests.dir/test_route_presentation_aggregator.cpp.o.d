@@ -1,5 +1,5 @@
-application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.o: \
- /home/vardan/DesktopNavigationSystem/application/tests/test_navigation_service.cpp \
+application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o: \
+ /home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp \
  /usr/include/stdc-predef.h /usr/include/gtest/gtest.h \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -301,16 +301,7 @@ application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.o
  /usr/include/gtest/gtest-test-part.h \
  /usr/include/gtest/gtest-typed-test.h \
  /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h \
- /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/Graph.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Node.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/../types/Types.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Edge.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/NavigationService.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/NavigationResponse.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationAggregator.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationData.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationBuilder.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationAggregator.hpp \
- /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp
+ /home/vardan/DesktopNavigationSystem/core/include/core/types/Types.hpp

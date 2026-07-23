@@ -91,6 +91,16 @@
 			null
 		],
 		[
+			"/home/vardan/DesktopNavigationSystem/application/tests/test_route_optimizer.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_builder.cpp",
 			"MU",
 			null

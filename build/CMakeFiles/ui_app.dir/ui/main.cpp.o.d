@@ -381,15 +381,18 @@ CMakeFiles/ui_app.dir/ui/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
  /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationBootstrap.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/types/Types.hpp \
+ /home/vardan/DesktopNavigationSystem/persistence/include/ImportedGraph.hpp \
+ /home/vardan/DesktopNavigationSystem/core/include/core/graph/Graph.hpp \
+ /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Node.hpp \
+ /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Edge.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationService.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/NavigationResponse.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationData.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/INodeGeometryProvider.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/Graph.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Node.hpp \
- /home/vardan/DesktopNavigationSystem/core/include/core/graph/../model/Edge.hpp \
- /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationBuilder.hpp \
  /home/vardan/DesktopNavigationSystem/core/include/core/model/Route.hpp \
+ /home/vardan/DesktopNavigationSystem/application/include/application/RoutePresentationAggregator.hpp \
+ /home/vardan/DesktopNavigationSystem/Algorithms/Interfaces/IPathFinder.hpp \
  /home/vardan/DesktopNavigationSystem/application/include/application/ApplicationTypes.hpp \
  /usr/include/c++/13/iostream \
  /home/vardan/DesktopNavigationSystem/ui/mainwindow/MainWindow.h \

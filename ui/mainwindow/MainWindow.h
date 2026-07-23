@@ -9,6 +9,7 @@
 #include <core/types/Types.hpp>
 
 #include <optional>
+#include <vector>
 
 namespace core::graph
 {
@@ -29,6 +30,7 @@ struct Coordinate;
 class QGraphicsScene;
 class QGraphicsView;
 class QShowEvent;
+class QPushButton;
 
 class SceneController;
 class MapRenderer;
@@ -66,12 +68,15 @@ private slots:
         const application::RoutePresentationData& route
     );
 
-
     void onNavigationFailed(
         const QString& message
     );
 
-    
+    void onMultiDestinationRouteReady(
+        const application::RoutePresentationData& route
+    );
+
+    void calculateMultiDestinationRoute();
 
 private:
 
@@ -86,6 +91,11 @@ private:
         core::types::NodeId
     >
     selectedStartNode_;
+
+    std::vector<
+        core::types::NodeId
+    >
+    selectedDestinationNodes_;
 
     void handleSceneClick(
         double x,
@@ -106,6 +116,9 @@ private:
 
 
     QGraphicsView* graphicsView;
+
+
+    QPushButton* calculateRouteButton;
 
 
     SceneController* sceneController;

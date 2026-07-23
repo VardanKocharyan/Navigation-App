@@ -463,6 +463,54 @@ application/src/NavigationService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/NavigationService.cpp.s
 .PHONY : application/src/NavigationService.cpp.s
 
+application/src/RouteOptimizer.o: application/src/RouteOptimizer.cpp.o
+.PHONY : application/src/RouteOptimizer.o
+
+# target to build an object file
+application/src/RouteOptimizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.o
+.PHONY : application/src/RouteOptimizer.cpp.o
+
+application/src/RouteOptimizer.i: application/src/RouteOptimizer.cpp.i
+.PHONY : application/src/RouteOptimizer.i
+
+# target to preprocess a source file
+application/src/RouteOptimizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.i
+.PHONY : application/src/RouteOptimizer.cpp.i
+
+application/src/RouteOptimizer.s: application/src/RouteOptimizer.cpp.s
+.PHONY : application/src/RouteOptimizer.s
+
+# target to generate assembly for a file
+application/src/RouteOptimizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RouteOptimizer.cpp.s
+.PHONY : application/src/RouteOptimizer.cpp.s
+
+application/src/RoutePresentationAggregator.o: application/src/RoutePresentationAggregator.cpp.o
+.PHONY : application/src/RoutePresentationAggregator.o
+
+# target to build an object file
+application/src/RoutePresentationAggregator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.o
+.PHONY : application/src/RoutePresentationAggregator.cpp.o
+
+application/src/RoutePresentationAggregator.i: application/src/RoutePresentationAggregator.cpp.i
+.PHONY : application/src/RoutePresentationAggregator.i
+
+# target to preprocess a source file
+application/src/RoutePresentationAggregator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.i
+.PHONY : application/src/RoutePresentationAggregator.cpp.i
+
+application/src/RoutePresentationAggregator.s: application/src/RoutePresentationAggregator.cpp.s
+.PHONY : application/src/RoutePresentationAggregator.s
+
+# target to generate assembly for a file
+application/src/RoutePresentationAggregator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/application.dir/build.make CMakeFiles/application.dir/application/src/RoutePresentationAggregator.cpp.s
+.PHONY : application/src/RoutePresentationAggregator.cpp.s
+
 application/src/RoutePresentationBuilder.o: application/src/RoutePresentationBuilder.cpp.o
 .PHONY : application/src/RoutePresentationBuilder.o
 
@@ -962,6 +1010,12 @@ help:
 	@echo "... application/src/NavigationService.o"
 	@echo "... application/src/NavigationService.i"
 	@echo "... application/src/NavigationService.s"
+	@echo "... application/src/RouteOptimizer.o"
+	@echo "... application/src/RouteOptimizer.i"
+	@echo "... application/src/RouteOptimizer.s"
+	@echo "... application/src/RoutePresentationAggregator.o"
+	@echo "... application/src/RoutePresentationAggregator.i"
+	@echo "... application/src/RoutePresentationAggregator.s"
 	@echo "... application/src/RoutePresentationBuilder.o"
 	@echo "... application/src/RoutePresentationBuilder.i"
 	@echo "... application/src/RoutePresentationBuilder.s"

@@ -217,6 +217,42 @@ NavigationService::requestMultiDestinationRoute(
             destination;
     }
 
+    std::vector<RoutePresentationData> presentations;
+
+    RoutePresentationBuilder builder(
+        geometryProvider_
+    );
+
+    for (
+        std::size_t index = 0;
+        index < result.segments.size();
+        ++index
+    )
+    {
+        const auto& segment =
+            result.segments[index];
+
+
+        auto presentation =
+            builder.build(
+                segment.route
+            );
+
+        presentations.push_back(
+            std::move(
+                presentation
+            )
+        );
+    }
+
+
+    RoutePresentationAggregator aggregator;
+
+
+    result.route =
+        aggregator.aggregate(
+            presentations
+        );
 
     result.success = true;
 

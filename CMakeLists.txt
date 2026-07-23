@@ -52,8 +52,10 @@ add_library(application
     application/src/NavigationService.cpp
     application/src/GraphLoader.cpp
     application/src/RoutePresentationBuilder.cpp
+    application/src/RouteOptimizer.cpp
     application/src/ApplicationBootstrap.cpp
     application/src/RuntimeGeometryProvider.cpp
+    application/src/RoutePresentationAggregator.cpp
 )
 
 target_include_directories(application PUBLIC

@@ -118,11 +118,41 @@ application/tests/CMakeFiles/application_tests.dir/test_route_presentation_build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.s"
 	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_builder.cpp -o CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.s
 
+application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o: application/tests/CMakeFiles/application_tests.dir/flags.make
+application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o: /home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp
+application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o: application/tests/CMakeFiles/application_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o"
+	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o -MF CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o.d -o CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o -c /home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp
+
+application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.i"
+	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp > CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.i
+
+application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.s"
+	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/tests/test_route_presentation_aggregator.cpp -o CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.s
+
+application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o: application/tests/CMakeFiles/application_tests.dir/flags.make
+application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o: /home/vardan/DesktopNavigationSystem/application/tests/test_route_optimizer.cpp
+application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o: application/tests/CMakeFiles/application_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o"
+	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o -MF CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o.d -o CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o -c /home/vardan/DesktopNavigationSystem/application/tests/test_route_optimizer.cpp
+
+application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/application_tests.dir/test_route_optimizer.cpp.i"
+	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vardan/DesktopNavigationSystem/application/tests/test_route_optimizer.cpp > CMakeFiles/application_tests.dir/test_route_optimizer.cpp.i
+
+application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/application_tests.dir/test_route_optimizer.cpp.s"
+	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vardan/DesktopNavigationSystem/application/tests/test_route_optimizer.cpp -o CMakeFiles/application_tests.dir/test_route_optimizer.cpp.s
+
 # Object files for target application_tests
 application_tests_OBJECTS = \
 "CMakeFiles/application_tests.dir/application_tests_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/application_tests.dir/test_navigation_service.cpp.o" \
-"CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.o"
+"CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.o" \
+"CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o" \
+"CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o"
 
 # External object files for target application_tests
 application_tests_EXTERNAL_OBJECTS =
@@ -130,6 +160,8 @@ application_tests_EXTERNAL_OBJECTS =
 application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/application_tests_autogen/mocs_compilation.cpp.o
 application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/test_navigation_service.cpp.o
 application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/test_route_presentation_builder.cpp.o
+application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/test_route_presentation_aggregator.cpp.o
+application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/test_route_optimizer.cpp.o
 application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/build.make
 application/tests/application_tests: libapplication.a
 application/tests/application_tests: libcore.a
@@ -139,7 +171,7 @@ application/tests/application_tests: libpersistence.a
 application/tests/application_tests: libcore.a
 application/tests/application_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
 application/tests/application_tests: application/tests/CMakeFiles/application_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable application_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vardan/DesktopNavigationSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable application_tests"
 	cd /home/vardan/DesktopNavigationSystem/build/application/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/application_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/vardan/DesktopNavigationSystem/build/application/tests && /usr/bin/cmake -D TEST_TARGET=application_tests -D TEST_EXECUTABLE=/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/vardan/DesktopNavigationSystem/build/application/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=application_tests_TESTS -D CTEST_FILE=/home/vardan/DesktopNavigationSystem/build/application/tests/application_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 

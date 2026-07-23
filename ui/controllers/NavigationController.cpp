@@ -47,3 +47,37 @@ void NavigationController::requestRoute(
         );
     }
 }
+
+void NavigationController::requestMultiDestinationRoute(
+    core::types::NodeId start,
+    const std::vector<
+        core::types::NodeId
+    >& destinations
+)
+{
+    const auto response =
+        navigationService.requestMultiDestinationRoute(
+            start,
+            destinations
+        );
+
+    if (response.success)
+    {
+        if (response.route.has_value())
+        {
+            emit routeReady(
+                *response.route
+            );
+
+            return;
+        }
+    }
+
+    emit navigationFailed(
+        QString::fromStdString(
+            response.message
+        )
+    );
+}
+
+
